@@ -1,20 +1,18 @@
 package elcom.ex1.LibraryBooks.service;
 
 
-import elcom.ex1.LibraryBooks.entity.BOOKS;
-
-import java.util.List;
+import elcom.ex1.LibraryBooks.entity.Books;
 
 public interface BookService {
 
-    BOOKS findById(Long ID);
+    Books findById(Long ID);
 
-    BOOKS create( BOOKS book );
+    Books create(Books book );
 
-    BOOKS update(Long ID, BOOKS book);
+    Books update(Long ID, Books book);
 
     void delete(Long ID);
 
-    Iterable<BOOKS> findAll();
+    Iterable<Books> findAll();
 
 }

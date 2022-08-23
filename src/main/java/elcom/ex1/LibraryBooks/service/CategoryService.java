@@ -1,17 +1,20 @@
 package elcom.ex1.LibraryBooks.service;
 
 
-import elcom.ex1.LibraryBooks.entity.CATEGORY;
+import elcom.ex1.LibraryBooks.entity.Category;
+
+
 
 public interface CategoryService {
 
-    CATEGORY findById(Long ID);
 
-    CATEGORY create( CATEGORY category );
+     Category findById(Long ID);
 
-    CATEGORY update(Long ID, CATEGORY category);
+    Category create(Category category );
+
+    Category update(Long ID, Category category);
 
     void delete(Long ID);
 
-    Iterable<CATEGORY> findAll();
+    Iterable<Category> findAll();
 }

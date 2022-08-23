@@ -13,22 +13,22 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class BOOKS {
+public class Books {
     @Id
     @Column(name="ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
     @Column(name="BOOK_NAME")
-    private String book_name;
+    private String bookName;
 
     @Column(name="AMOUNT")
-    private Integer book_amount;
+    private Integer bookAmount;
 
     @Column(name="CATEGORY")
     private String category;
 
     @Column(name="AUTHOR_NAME")
-    private String author_name;
+    private String authorName;
 
 
 }

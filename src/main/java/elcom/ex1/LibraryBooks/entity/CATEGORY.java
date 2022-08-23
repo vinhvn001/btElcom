@@ -15,12 +15,12 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class CATEGORY {
+public class Category {
     @Id
     @Column(name="ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
     @Column(name="CATEGORY_NAME")
-    private String category;
+    private String categoryName;
 
 }

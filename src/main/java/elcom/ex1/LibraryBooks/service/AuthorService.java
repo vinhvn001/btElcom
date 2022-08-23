@@ -1,20 +1,17 @@
 package elcom.ex1.LibraryBooks.service;
 
 
-import elcom.ex1.LibraryBooks.entity.AUTHOR;
-
-
-import java.util.List;
+import elcom.ex1.LibraryBooks.entity.Author;
 
 public interface AuthorService {
-    AUTHOR findById(Long ID);
+    Author findById(Long ID);
 
-    AUTHOR create( AUTHOR book );
+    Author create(Author author );
 
-    AUTHOR update(Long ID, AUTHOR book);
+    Author update(Long ID, Author author);
 
     void delete(Long ID);
 
-    Iterable<AUTHOR> findAll();
+    Iterable<Author> findAll();
 
 }

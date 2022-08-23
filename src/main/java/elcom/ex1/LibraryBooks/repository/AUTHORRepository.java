@@ -1,7 +1,8 @@
 package elcom.ex1.LibraryBooks.repository;
 
+import elcom.ex1.LibraryBooks.entity.Author;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AUTHORRepository  extends CrudRepository<AUTHORRepository, Long> {}
+public interface AuthorRepository extends CrudRepository<Author, Long> {}
