@@ -33,5 +33,5 @@ ALTER TABLE BOOK ADD FOREIGN KEY(CATEGORY_NAME) REFERENCES CATEGORY(CATEGORY_NAM
 
 Insert into AUTHOR (ID, AUTHOR_NAME) values ("1", "Tran Hoang Long");
 Insert into CATEGORY(ID, CATEGORY_NAME) values("1", " Lich su");
-Insert into BOOK(ID, BOOK_NAME, AMOUNT, CATEGORY_NAME, AUTHOR_NAME) values
- ("1","Lich su dai viet","30","Lich su","Tran Hoang Long");
+Insert into BOOK(ID, BOOK_NAME, AMOUNT, CATEGORY_NAME, AUTHOR_NAME, FIRST_LETTER) values
+ ("1","Lich su dai viet","30","Lich su","Tran Hoang Long","L");
