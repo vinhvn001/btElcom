@@ -7,31 +7,19 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+@Table(name="BOOK_LETTER_ORDINAL")
 @Entity
-@Table(name="BOOK")
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
 @Setter
-public class Books {
+@Getter
+public class FirstLetter {
+
     @Id
     @Column(name="ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
-    @Column(name="BOOK_NAME")
-    private String bookName;
 
-    @Column(name="AMOUNT")
-    private Integer bookAmount;
-
-    @Column(name="CATEGORY_NAME")
-    private String category;
-
-    @Column(name="AUTHOR_NAME")
-    private String authorName;
-
-    @Column(name="FIRST_LETTER")
+    @Column(name="LETTER")
     private String firstLetter;
-
-
 }

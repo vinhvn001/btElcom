@@ -6,27 +6,31 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/Author")
+@RequestMapping("/author")
 public class AuthorController {
 
     @Autowired
-    private AuthorService authorService;
+    private final AuthorService authorService;
+
+    public AuthorController(AuthorService authorService) {
+        this.authorService = authorService;
+    }
 
     @PostMapping
     public Author create (@RequestBody Author author){
         return authorService.create(author);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{ID}")
     public Author update(@PathVariable Long ID, @RequestBody Author author){
         return authorService.update(ID, author);
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{ID}")
     public void delete(@PathVariable Long ID){
         authorService.delete(ID);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{ID}")
     public Author findById(@PathVariable Long ID){
         return authorService.findById(ID);
     }

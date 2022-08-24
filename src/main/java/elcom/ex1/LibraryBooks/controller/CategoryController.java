@@ -6,13 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/Category")
+@RequestMapping("/category")
 public class CategoryController {
-
     @Autowired
-    CategoryService categoryService;
+    private final CategoryService categoryService;
 
-    @GetMapping("/{id}")
+    public CategoryController(CategoryService categoryService) {
+        this.categoryService = categoryService;
+    }
+
+
+    @GetMapping("/{ID}")
     public Category findById(@PathVariable Long ID){
         return categoryService.findById(ID);
     }
@@ -22,12 +26,12 @@ public class CategoryController {
         return categoryService.create(category);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{ID}")
     public Category update(@PathVariable Long ID, @RequestBody Category category){
         return categoryService.update(ID, category);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{ID}")
     public void delete(@PathVariable Long ID){
         categoryService.delete(ID);
     }

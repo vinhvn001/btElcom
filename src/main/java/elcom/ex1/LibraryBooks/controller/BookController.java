@@ -6,23 +6,29 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/Book")
+@RequestMapping("/book")
 public class BookController {
 
     @Autowired
-    BookService bookService;
+    private final BookService bookService;
 
-    @GetMapping("/{id}")
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
+
+    @GetMapping("/{ID}")
     public Books findById(@PathVariable Long ID){
+
         return bookService.findById(ID);
     }
 
     @PostMapping
     public Books create(@RequestBody Books book){
+
         return bookService.create(book);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{ID}")
     public Books update(@PathVariable Long ID, @RequestBody Books book){
         return bookService.update(ID, book);
     }
