@@ -1,11 +1,9 @@
 package elcom.ex1.LibraryBooks.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name="AUTHOR")
@@ -15,11 +13,12 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Author {
     @Id
-    @Column(name="ID")
+    @Column(name="AUTHOR_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
     @Column(name="AUTHOR_NAME")
     private String authorName;
 
-
+    @OneToMany(mappedBy = "author")
+    private Collection<Books> books;
 }

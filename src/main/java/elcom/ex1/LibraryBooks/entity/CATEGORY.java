@@ -1,12 +1,10 @@
 package elcom.ex1.LibraryBooks.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 import javax.persistence.*;
+import java.util.Collection;
 
 
 @Entity
@@ -17,10 +15,14 @@ import javax.persistence.*;
 @Setter
 public class Category {
     @Id
-    @Column(name="ID")
+    @Column(name="CATEGORY_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
     @Column(name="CATEGORY_NAME")
     private String categoryName;
 
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+     private Collection<Books> books;
 }

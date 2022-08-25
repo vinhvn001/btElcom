@@ -34,7 +34,7 @@ public class BookServiceImpl implements BookService {
             fromDB.setCategory(book.getCategory());
             fromDB.setBookAmount(book.getBookAmount());
             fromDB.setBookName(book.getBookName());
-            fromDB.setAuthorName(book.getAuthorName());
+            fromDB.setAuthor(book.getAuthor());
             return booksRepository.save(fromDB);
         }
     }

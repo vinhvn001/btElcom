@@ -1,9 +1,6 @@
 package elcom.ex1.LibraryBooks.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -24,14 +21,20 @@ public class Books {
     @Column(name="AMOUNT")
     private Integer bookAmount;
 
-    @Column(name="CATEGORY_NAME")
-    private String category;
-
-    @Column(name="AUTHOR_NAME")
-    private String authorName;
-
     @Column(name="FIRST_LETTER")
     private String firstLetter;
 
+
+    @ManyToOne
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @JoinColumn(name="AUTHOR_ID")
+    private Author author;
+
+    @ManyToOne
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @JoinColumn(name="CATEGORY_ID")
+    private Category category;
 
 }
