@@ -21,8 +21,7 @@ public class Category {
     @Column(name="CATEGORY_NAME")
     private String categoryName;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
-     private Collection<Books> books;
+    //@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+
+    // private Collection<Book> books;
 }

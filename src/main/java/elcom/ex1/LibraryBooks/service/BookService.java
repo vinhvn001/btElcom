@@ -1,18 +1,26 @@
 package elcom.ex1.LibraryBooks.service;
 
 
-import elcom.ex1.LibraryBooks.entity.Books;
+import elcom.ex1.LibraryBooks.entity.Book;
+import org.springframework.data.jpa.repository.Query;
+
 
 public interface BookService {
 
-    Books findById(Long ID);
+    Book findById(Long ID);
 
-    Books create(Books book );
+    Book create(Book book );
 
-    Books update(Long ID, Books book);
+    Book update(Long ID, Book book);
 
     void delete(Long ID);
 
-    Iterable<Books> findAll();
+    Iterable<Book> findAll();
 
+
+    Book findBookAmountByAuthorId(Long ID);
+
+    Book findBookAmountByFirstLetter(String firstLetter);
+
+    Book findBookAmountByCategoryId(Long ID);
 }

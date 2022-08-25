@@ -19,6 +19,7 @@ public class Author {
     @Column(name="AUTHOR_NAME")
     private String authorName;
 
-    @OneToMany(mappedBy = "author")
-    private Collection<Books> books;
+
+    //@OneToMany(mappedBy = "author")
+    //private Collection<Book> books;
 }
