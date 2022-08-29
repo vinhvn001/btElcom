@@ -17,10 +17,10 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @GetMapping("/{ID}")
-    public Book findById(@PathVariable Long ID){
+    @GetMapping("/{id}")
+    public Book findById(@PathVariable Long id){
 
-        return bookService.findById(ID);
+        return bookService.findById(id);
     }
 
     @PostMapping
@@ -29,13 +29,16 @@ public class BookController {
         return bookService.create(book);
     }
 
-    @PutMapping("/{ID}")
-    public Book update(@PathVariable Long ID, @RequestBody Book book){
-        return bookService.update(ID, book);
+    @PutMapping("/{id}")
+    public Book update(@PathVariable Long id, @RequestBody Book book){
+        return bookService.update(id, book);
     }
 
     @GetMapping
-    public Iterable<Book> findAll(Long ID){
+    public Iterable<Book> findAll(Long id){
         return bookService.findAll();
     }
+
 }
+
+

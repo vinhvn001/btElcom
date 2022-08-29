@@ -16,9 +16,9 @@ public class CategoryController {
     }
 
 
-    @GetMapping("/{ID}")
-    public Category findById(@PathVariable Long ID){
-        return categoryService.findById(ID);
+    @GetMapping("/{id}")
+    public Category findById(@PathVariable Long id){
+        return categoryService.findById(id);
     }
 
     @PostMapping
@@ -26,14 +26,14 @@ public class CategoryController {
         return categoryService.create(category);
     }
 
-    @PutMapping("/{ID}")
-    public Category update(@PathVariable Long ID, @RequestBody Category category){
-        return categoryService.update(ID, category);
+    @PutMapping("/{id}")
+    public Category update(@PathVariable Long id, @RequestBody Category category){
+        return categoryService.update(id, category);
     }
 
-    @DeleteMapping("/{ID}")
-    public void delete(@PathVariable Long ID){
-        categoryService.delete(ID);
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        categoryService.delete(id);
     }
 
     @GetMapping

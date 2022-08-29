@@ -15,10 +15,10 @@ import java.util.Collection;
 @Setter
 public class Category {
     @Id
-    @Column(name="CATEGORY_ID")
+    @Column(name = "CATEGORY_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ID;
-    @Column(name="CATEGORY_NAME")
+    private Long id;
+    @Column(name = "CATEGORY_NAME")
     private String categoryName;
 
     //@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)

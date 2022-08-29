@@ -14,13 +14,13 @@ public class CategoryServiceImpl implements CategoryService {
     private CategoryRepository categoryRepository;
 
     @Override
-    public Category findById(Long ID) {
-        return categoryRepository.findById(ID).orElse(null);
+    public Category findById(Long id) {
+        return categoryRepository.findById(id).orElse(null);
     }
 
     @Override
     public Category create(Category category) {
-        if(category.getID() == null ){
+        if(category.getId() == null ){
             return null;
         }
         if(category.getCategoryName() == null){
@@ -30,21 +30,21 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Category update(Long ID, Category category) {
-        Category fromDB = categoryRepository.findById(ID).orElse(null);
+    public Category update(Long id, Category category) {
+        Category fromDB = categoryRepository.findById(id).orElse(null);
         if (fromDB == null){
             return null;
         }
         else{
-            fromDB.setID(category.getID());
+            fromDB.setId(category.getId());
             fromDB.setCategoryName(category.getCategoryName());
             return categoryRepository.save(fromDB);
         }
     }
 
     @Override
-    public void delete(Long ID) {
-        categoryRepository.deleteById(ID);
+    public void delete(Long id) {
+        categoryRepository.deleteById(id);
     }
 
     @Override

@@ -7,20 +7,20 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface BookService {
 
-    Book findById(Long ID);
+    Book findById(Long id);
 
     Book create(Book book );
 
-    Book update(Long ID, Book book);
+    Book update(Long id, Book book);
 
-    void delete(Long ID);
+    void delete(Long id);
 
     Iterable<Book> findAll();
 
 
-    Book findBookAmountByAuthorId(Long ID);
+    Book findBookAmountByAuthorId(Long id);
 
     Book findBookAmountByFirstLetter(String firstLetter);
 
-    Book findBookAmountByCategoryId(Long ID);
+    Book findBookAmountByCategoryId(Long id);
 }

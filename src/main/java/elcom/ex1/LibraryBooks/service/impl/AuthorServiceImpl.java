@@ -12,13 +12,13 @@ public class AuthorServiceImpl implements AuthorService {
     AuthorRepository authorRepository;
 
     @Override
-    public Author findById(Long ID) {
-        return authorRepository.findById(ID).orElse(null);
+    public Author findById(Long id) {
+        return authorRepository.findById(id).orElse(null);
     }
 
     @Override
     public Author create(Author author) {
-        if(author.getID() == null){
+        if(author.getId() == null){
             return null;
         }
         if(author.getAuthorName() == null){
@@ -34,7 +34,7 @@ public class AuthorServiceImpl implements AuthorService {
             return null;
         }
         else{
-            fromDB.setID(author.getID());
+            fromDB.setId(author.getId());
             fromDB.setAuthorName(author.getAuthorName());
             return authorRepository.save(fromDB);
         }
@@ -42,8 +42,8 @@ public class AuthorServiceImpl implements AuthorService {
 
 
     @Override
-    public void delete(Long ID) {
-        authorRepository.deleteById(ID);
+    public void delete(Long id) {
+        authorRepository.deleteById(id);
     }
 
     @Override

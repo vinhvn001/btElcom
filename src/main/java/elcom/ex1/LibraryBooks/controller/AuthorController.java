@@ -22,18 +22,18 @@ public class AuthorController {
         return authorService.create(author);
     }
 
-    @PutMapping("/{ID}")
-    public Author update(@PathVariable Long ID, @RequestBody Author author){
-        return authorService.update(ID, author);
+    @PutMapping("/{id}")
+    public Author update(@PathVariable Long id, @RequestBody Author author){
+        return authorService.update(id, author);
     }
-    @DeleteMapping("/{ID}")
-    public void delete(@PathVariable Long ID){
-        authorService.delete(ID);
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        authorService.delete(id);
     }
 
-    @GetMapping("/{ID}")
-    public Author findById(@PathVariable Long ID){
-        return authorService.findById(ID);
+    @GetMapping("/{id}")
+    public Author findById(@PathVariable Long id){
+        return authorService.findById(id);
     }
     @GetMapping
     public Iterable<Author> findAll(){

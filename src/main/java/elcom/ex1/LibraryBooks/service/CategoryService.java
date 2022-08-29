@@ -8,13 +8,13 @@ import elcom.ex1.LibraryBooks.entity.Category;
 public interface CategoryService {
 
 
-     Category findById(Long ID);
+     Category findById(Long id);
 
     Category create(Category category );
 
-    Category update(Long ID, Category category);
+    Category update(Long id, Category category);
 
-    void delete(Long ID);
+    void delete(Long id);
 
     Iterable<Category> findAll();
 }

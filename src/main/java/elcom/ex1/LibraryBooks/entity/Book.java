@@ -11,25 +11,26 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Book {
+
     @Id
-    @Column(name="ID")
+    @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ID;
-    @Column(name="BOOK_NAME")
+    private Long id;
+    @Column(name = "BOOK_NAME")
     private String bookName;
 
-    @Column(name="AMOUNT")
+    @Column(name = "AMOUNT")
     private Integer bookAmount;
 
-    @Column(name="FIRST_LETTER")
+    @Column(name = "FIRST_LETTER")
     private String firstLetter;
 
     @ManyToOne
-    @JoinColumn(name ="AUTHOR_ID")
+    @JoinColumn(name = "AUTHOR_ID")
     private Author authorId;
 
     @ManyToOne
-    @JoinColumn(name="CATEGORY_ID")
+    @JoinColumn(name = "CATEGORY_ID")
     private Category categoryId;
 
 }

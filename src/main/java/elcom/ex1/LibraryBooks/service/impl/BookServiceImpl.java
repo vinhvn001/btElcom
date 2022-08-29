@@ -13,24 +13,24 @@ public class BookServiceImpl implements BookService {
     BookRepository bookRepository;
 
     @Override
-    public Book findById(Long ID) {
-        return bookRepository.findById(ID).orElse(null);
+    public Book findById(Long id) {
+        return bookRepository.findById(id).orElse(null);
     }
 
     @Override
     public Book create(Book book) {
-        if(book.getID() == null || book.getBookName() == null || book.getBookAmount() == null )
+        if(book.getId() == null || book.getBookName() == null || book.getBookAmount() == null )
             return null;
         return bookRepository.save(book);
     }
 
     @Override
-    public Book update(Long ID, Book book) {
-        Book fromDB = bookRepository.findById(ID).orElse(null);
+    public Book update(Long id, Book book) {
+        Book fromDB = bookRepository.findById(id).orElse(null);
         if(fromDB == null)
             return null;
         else{
-            fromDB.setID(book.getID());
+            fromDB.setId(book.getId());
             fromDB.setCategoryId(book.getCategoryId());
             fromDB.setBookAmount(book.getBookAmount());
             fromDB.setBookName(book.getBookName());
@@ -40,8 +40,8 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void delete(Long ID) {
-         bookRepository.deleteById(ID);
+    public void delete(Long id) {
+         bookRepository.deleteById(id);
     }
 
     @Override
@@ -50,8 +50,8 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book findBookAmountByAuthorId(Long ID) {
-        return bookRepository.findBookAmountByAuthorId(ID);
+    public Book findBookAmountByAuthorId(Long id) {
+        return bookRepository.findBookAmountByAuthorId(id);
     }
 
     @Override
@@ -60,8 +60,8 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book findBookAmountByCategoryId(Long ID) {
-        return bookRepository.findBookAmountByCategoryId(ID);
+    public Book findBookAmountByCategoryId(Long id) {
+        return bookRepository.findBookAmountByCategoryId(id);
     }
 
 
