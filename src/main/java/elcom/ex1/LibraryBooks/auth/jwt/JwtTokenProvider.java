@@ -13,7 +13,7 @@ public class JwtTokenProvider {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtTokenProvider.class);
 
-    private final String JWT_SECRET =" elcom_08_2022";
+    private final String JWT_SECRET ="elcom_08_2022";
 
     private final Long JWT_EXPIRATION = 60480000L;
 

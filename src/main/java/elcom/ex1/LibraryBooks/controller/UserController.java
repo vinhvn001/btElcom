@@ -18,7 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import javax.validation.ValidationException;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UserController {
 
     private static final Logger LOGGER =  LoggerFactory.getLogger(UserController.class);
@@ -61,7 +61,7 @@ public class UserController {
         userService.save(user);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(builder.path("/users/{id}").buildAndExpand(user.getId()).toUri());
+        headers.setLocation(builder.path("/user/{id}").buildAndExpand(user.getId()).toUri());
 
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
@@ -80,7 +80,6 @@ public class UserController {
         if ( currentUser==null )
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 
-        //Cần override những field nào thì set hết vào đây (các thuộc tính nằm trong payLoad client gửi lên)
         currentUser.setFullName(user.getFullName());
         if( !StringUtil.isNullOrEmpty(user.getPassword()) )
             currentUser.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));

@@ -16,26 +16,26 @@ public class User implements Serializable {
     @Column(name = "ID")
     private Long id;
 
-    @Column(name = "USERNAME")
-    private String userName;
+    @Column(name = "username")
+    private String username;
 
-    @Column(name = "PASSWORD")
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "FULL_NAME")
+    @Column(name = "full_name")
     private String fullName;
 
-    @Column(name = "ROLE_NAME")
+    @Column(name = "role_name")
     private String roleName;
 
-    @Column(name = "CREATED_AT")
+    @Column(name = "created_at" )
     private Timestamp createdAt;
 
     public User() {
     }
 
-    public User(String userName, String password, String fullName, String roleName) {
-        this.userName = userName;
+    public User(String username, String password, String fullName, String roleName) {
+        this.username = username;
         this.password = password;
         this.fullName = fullName;
         this.roleName = roleName;
@@ -61,9 +61,9 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUserName(){ return userName; }
+    public String getUserName(){ return username; }
 
-    public void setUserName(String userName){ this.userName = userName; }
+    public void setUserName(String username){ this.username = username; }
     public String getPassword() {
         return password;
     }

@@ -40,18 +40,20 @@ public class UserCustomizeRepository {
         return null;
     }
 
-    public User findByUserName(String userName){
-        Session session = openSession();
-        Object result = null;
-        try{
-            Query query = session.createNativeQuery("SELECT * FROM USER WHERE username = ? ", User.class);
-            query.setParameter(1, userName);
-            result = query.getSingleResult();
-        }catch (NoResultException e){
-            LOGGER.error(e.toString());
-        }
-        return result!= null ? (User) result :null;
-    }
+//    public User findByUserName(String userName){
+//        Session session = openSession();
+//        Object result = null;
+//        try{
+//            Query query = session.createNativeQuery("SELECT * FROM user WHERE username = ? ", User.class);
+//            query.setParameter(1, userName);
+//            result = query.getSingleResult();
+//        }catch (NoResultException e){
+//            LOGGER.error(e.toString());
+//        }finally {
+//            closeSession(session);
+//        }
+//        return result!= null ? (User) result :null;
+//    }
     private Session openSession() {
         Session session = this.sessionFactory.openSession();
         return session;
