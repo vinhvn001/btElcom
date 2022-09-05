@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityNotFoundException;
+//import javax.persistence.NoResultException;
+
 
 @Repository
 public class UserCustomizeRepository {

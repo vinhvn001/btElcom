@@ -1,7 +1,9 @@
 package elcom.ex1.librarybooks.service;
 
 
+import elcom.ex1.librarybooks.entity.Author;
 import elcom.ex1.librarybooks.entity.Book;
+import elcom.ex1.librarybooks.entity.Category;
 
 
 public interface BookService {
@@ -17,9 +19,9 @@ public interface BookService {
     Iterable<Book> findAll();
 
 
-    Book findBookAmountByAuthorId(Long id);
+    Integer findBookAmountByAuthorId(Author id);
 
-    Book findBookAmountByFirstLetter(String firstLetter);
+    Integer findBookAmountByFirstLetter(String firstLetter);
 
-    Book findBookAmountByCategoryId(Long id);
+    Integer findBookAmountByCategoryId(Category id);
 }

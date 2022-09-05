@@ -2,6 +2,7 @@ package elcom.ex1.librarybooks.entity;
 
 import lombok.*;
 
+
 import javax.persistence.*;
 
 @Entity

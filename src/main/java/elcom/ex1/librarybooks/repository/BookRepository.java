@@ -1,6 +1,8 @@
 package elcom.ex1.librarybooks.repository;
 
+import elcom.ex1.librarybooks.entity.Author;
 import elcom.ex1.librarybooks.entity.Book;
+import elcom.ex1.librarybooks.entity.Category;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -8,12 +10,12 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BookRepository extends CrudRepository<Book, Long> {
 
-    @Query(value=" select *from Book a where a.author_id =?1" ,nativeQuery = true)
-    Book findBookAmountByAuthorId(Long id);
+    @Query(" select sum(b.bookAmount) from Book b where b.authorId = ?1" )
+    Integer findBookAmountByAuthorId(Author id);
 
-    @Query(value=" select *from Book a where a.first_letter =?1" ,nativeQuery = true)
-    Book findBookAmountByFirstLetter(String firstLetter);
+    @Query("select sum(b.bookAmount)from Book b where b.firstLetter= ?1" )
+    Integer findBookAmountByFirstLetter(String firstLetter);
 
-    @Query(value=" select *from Book a where a.category_id =?1" ,nativeQuery = true)
-    Book findBookAmountByCategoryId(Long id);
+    @Query("select sum(b.bookAmount)from Book b where b.categoryId= ?1" )
+    Integer findBookAmountByCategoryId(Category id);
 }

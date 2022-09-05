@@ -1,6 +1,8 @@
 package elcom.ex1.librarybooks.service.impl;
 
+import elcom.ex1.librarybooks.entity.Author;
 import elcom.ex1.librarybooks.entity.Book;
+import elcom.ex1.librarybooks.entity.Category;
 import elcom.ex1.librarybooks.repository.BookRepository;
 import elcom.ex1.librarybooks.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,17 +52,18 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book findBookAmountByAuthorId(Long id) {
+    public Integer findBookAmountByAuthorId(Author id) {
+
         return bookRepository.findBookAmountByAuthorId(id);
     }
 
     @Override
-    public Book findBookAmountByFirstLetter(String firstLetter) {
+    public Integer findBookAmountByFirstLetter(String firstLetter) {
         return bookRepository.findBookAmountByFirstLetter(firstLetter);
     }
 
     @Override
-    public Book findBookAmountByCategoryId(Long id) {
+    public Integer findBookAmountByCategoryId(Category id) {
         return bookRepository.findBookAmountByCategoryId(id);
     }
 

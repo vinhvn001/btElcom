@@ -61,7 +61,7 @@ public class UserController {
         userService.save(user);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(builder.path("/user/{id}").buildAndExpand(user.getId()).toUri());
+        headers.setLocation(builder.path("/users/{id}").buildAndExpand(user.getId()).toUri());
 
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
@@ -80,6 +80,7 @@ public class UserController {
         if ( currentUser==null )
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 
+        //
         currentUser.setFullName(user.getFullName());
         if( !StringUtil.isNullOrEmpty(user.getPassword()) )
             currentUser.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
