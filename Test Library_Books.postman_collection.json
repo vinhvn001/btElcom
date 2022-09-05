@@ -69,45 +69,6 @@
 			"response": []
 		},
 		{
-			"name": "Query book amount by category id",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\" = 1\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/book/statistic_by_category/?categoryId=3",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"book",
-						"statistic_by_category",
-						""
-					],
-					"query": [
-						{
-							"key": "categoryId",
-							"value": "3"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "UserLogin",
 			"request": {
 				"auth": {
@@ -226,6 +187,45 @@
 					"port": "8080",
 					"path": [
 						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query book amount by category id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" = 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/book/statistic_by_category/?categoryId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"statistic_by_category",
+						""
+					],
+					"query": [
+						{
+							"key": "categoryId",
+							"value": "3"
+						}
 					]
 				}
 			},
