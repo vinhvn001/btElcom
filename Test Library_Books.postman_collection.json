@@ -354,7 +354,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 4,\r\n    \"password\": \"$2a$10$ZZMPBSJfI8wf3W2GqQBiUuW0oJOhTWZaqGSRBStY8yN54zzjCDrKG\",\r\n    \"fullName\": \"nguyen tan\",\r\n    \"roleName\": \"admin\",\r\n    \"createdAt\": null,\r\n    \"userName\": \"tan1\"\r\n}",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"password\": \"$2a$10$ZZMPBSJfI8wf3W2GqQBiUuW0oJOhTWZaqGSRBStY8yN54zzjCDrKG\",\r\n    \"fullName\": \"nguyen tan\",\r\n    \"roleName\": \"admin\",\r\n    \"userName\": \"tan1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
