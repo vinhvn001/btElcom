@@ -38,6 +38,25 @@
 			"response": []
 		},
 		{
+			"name": "Connect to Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Connect to Category",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -47,7 +66,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[\r\n    {\r\n        \"categoryName\": \"Vat ly\",\r\n        \"id\": \"6\"\r\n    }\r\n]",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -63,6 +82,83 @@
 					"port": "8080",
 					"path": [
 						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"categoryName\":\"Cuoc song\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"categoryName\":\"tien te\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/category/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/category/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"7"
 					]
 				}
 			},
@@ -146,53 +242,6 @@
 			"response": []
 		},
 		{
-			"name": "Create new Author",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 4,\r\n    \"authorName\": \"Nguyen Viet\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/author",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"author"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Connect to Book",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/book",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"book"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Query book amount by category id",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -202,7 +251,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\" = 1\r\n    \r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
