@@ -10,12 +10,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.ValidationException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -31,11 +33,16 @@ public class UserController {
     }
 
     @GetMapping
-    public Iterable<User> findAll(){
-        return userService.findAll();
+    public ResponseEntity<List<User>> findAll() {
+
+        List<User> userList = userService.findAll();
+        if (userList.isEmpty())
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
+        return new ResponseEntity<>(userList, HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getById(@PathVariable Long id) {
         LOGGER.info("id[{}]", id);
 

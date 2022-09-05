@@ -1,5 +1,5 @@
 package elcom.ex1.librarybooks.repository;
-
+/*
 import elcom.ex1.librarybooks.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -65,4 +65,4 @@ public class UserCustomizeRepository {
             session.close();
         }
     }
-}
+}*/

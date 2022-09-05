@@ -1,32 +1,34 @@
 package elcom.ex1.librarybooks.service.impl;
 
 import elcom.ex1.librarybooks.entity.User;
-import elcom.ex1.librarybooks.repository.UserCustomizeRepository;
+//import elcom.ex1.librarybooks.repository.UserCustomizeRepository;
 import elcom.ex1.librarybooks.repository.UserRepository;
 import elcom.ex1.librarybooks.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
-    private final UserCustomizeRepository userCustomizeRepository;
+   // private final UserCustomizeRepository userCustomizeRepository;
 
     @Autowired
-    public UserServiceImpl(UserRepository userRepository, UserCustomizeRepository userCustomizeRepository) {
+    public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
-        this.userCustomizeRepository = userCustomizeRepository;
     }
 
     @Override
-    public Iterable<User> findAll() {
+    public List<User> findAll() {
         return userRepository.findAll();
     }
 
     @Override
     public User findById(Long id) {
-        return userCustomizeRepository.findById(id);
+
+        return userRepository.findById(id).orElse(null);
     }
 
     @Override
