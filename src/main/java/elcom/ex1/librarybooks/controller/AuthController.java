@@ -36,7 +36,7 @@ public class AuthController {
     @Autowired
     AuthenticationManager authenticationManager;
 
-    @RequestMapping(value ="/register", method = RequestMethod.POST)
+    @RequestMapping(value ="/login", method = RequestMethod.POST)
     public LoginResponse authenticateUser(@Valid @RequestBody LoginRequest loginRequest){
 
         new UserValidation().validateLogin(loginRequest.getUsername(), loginRequest.getPassword());
