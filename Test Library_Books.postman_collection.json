@@ -275,14 +275,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/register",
+					"raw": "http://localhost:8080/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"register"
+						"login"
 					]
 				}
 			},
@@ -299,7 +299,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyMzYxOTA3LCJleHAiOjE2NjI0MjIzODd9.8QRFCLGszF-4kzrj_1xBBMxv3X0eMscfbWBNhkrucngjQcxFDijFH4nbp5uRUDqtm5T8QLLkY8bbWIv0a0-RRA",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyNTY3Mzc4LCJleHAiOjE2NjI2Mjc4NTh9.r6GGFxS1mzRo6ecJXjyWtSMkeyELCZ2KU9mIo87YeAqtCjYFZRn0fRBSHyxyf_sdFYpPzKCztmxNe0eQ3xZ-Jw",
 							"type": "string"
 						}
 					]
@@ -382,7 +382,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyMzYxOTA3LCJleHAiOjE2NjI0MjIzODd9.8QRFCLGszF-4kzrj_1xBBMxv3X0eMscfbWBNhkrucngjQcxFDijFH4nbp5uRUDqtm5T8QLLkY8bbWIv0a0-RRA",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyNTY3Mzc4LCJleHAiOjE2NjI2Mjc4NTh9.r6GGFxS1mzRo6ecJXjyWtSMkeyELCZ2KU9mIo87YeAqtCjYFZRn0fRBSHyxyf_sdFYpPzKCztmxNe0eQ3xZ-Jw",
 							"type": "string"
 						}
 					]
