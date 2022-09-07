@@ -49,10 +49,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected  void configure(HttpSecurity http) throws Exception{
         http.authorizeRequests()
                 .antMatchers("/auth/login").permitAll()// not authen this url
-              .antMatchers("/user").hasAnyRole("admin")
-                .antMatchers("/user/*").hasAnyRole("admin")// role admin can access this
-               .antMatchers("/user/*").hasAnyRole("default")
-            //    .anyRequest().permitAll();
+                .antMatchers("/user").hasAnyRole("admin")
+                .antMatchers("/user/{id}").hasAnyRole("admin")// role admin can access this
+//               .antMatchers("/user/*").hasAnyRole("default")
+               //.anyRequest().permitAll();
             .anyRequest().authenticated();
         http.cors();
         http.csrf().disable();
