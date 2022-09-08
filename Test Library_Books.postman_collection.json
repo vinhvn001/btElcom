@@ -299,7 +299,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyNTY3Mzc4LCJleHAiOjE2NjI2Mjc4NTh9.r6GGFxS1mzRo6ecJXjyWtSMkeyELCZ2KU9mIo87YeAqtCjYFZRn0fRBSHyxyf_sdFYpPzKCztmxNe0eQ3xZ-Jw",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyNjE4Mzk3LCJleHAiOjE2NjI2Nzg4Nzd9.w-G5aO43em_QGS8S8XLDgs6hOpSi17sl-M9vpMFOC5rDXnsipV65aE4KCQdHSh9W_6bhywbb1boICviNQymG3A",
 							"type": "string"
 						}
 					]
@@ -315,7 +315,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"id\": 3,\r\n        \"password\": \"$2a$10$WUKTeU7Cnhfg7EadNkJZuOf3sHNT8NtHAQUm97ojFCLEGx2dctB2y\",\r\n        \"fullName\": \"nguyen viet\",\r\n        \"roleName\": \"admin\",\r\n        \"createdAt\": \"2022-08-30T04:04:30.000+00:00\",\r\n        \"userName\": \"viet\"\r\n    }",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -353,7 +353,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 4,\r\n    \"password\": \"$2a$10$ZZMPBSJfI8wf3W2GqQBiUuW0oJOhTWZaqGSRBStY8yN54zzjCDrKG\",\r\n    \"fullName\": \"nguyen tan\",\r\n    \"roleName\": \"admin\",\r\n    \"userName\": \"tan1\"\r\n}",
+					"raw": "{\r\n    \"id\":9,\r\n    \"userName\":\"luc\",\r\n    \"password\":\"12345\",\r\n    \"roleName\":\"default\",\r\n    \"fullName\":\"tran luc\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -390,7 +390,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/user/4",
+					"raw": "http://localhost:8080/user/9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -398,7 +398,7 @@
 					"port": "8080",
 					"path": [
 						"user",
-						"4"
+						"9"
 					]
 				}
 			},
