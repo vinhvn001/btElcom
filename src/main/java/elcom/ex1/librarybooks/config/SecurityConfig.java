@@ -49,9 +49,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected  void configure(HttpSecurity http) throws Exception{
         http.authorizeRequests()
                 .antMatchers("/login").permitAll()// not authen this url
-                .antMatchers("/user").hasAnyRole("admin")
-                .antMatchers("/user/{id}").hasAnyRole("admin")// role admin can access this
-//               .antMatchers("/user/*").hasAnyRole("default")
+                .antMatchers("/user").hasAnyRole("admin")// only role admin can access this url
+   //            .antMatchers("/user/*").hasAnyRole("default")
                //.anyRequest().permitAll();
             .anyRequest().authenticated();
         http.cors();
@@ -74,6 +73,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         System.out.println(encoder.encode("1234"));
         System.out.println(encoder.encode("123"));
+        System.out.println(encoder.encode("12345"));
     }
-
     }

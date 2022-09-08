@@ -35,6 +35,9 @@ public class    UserValidation extends AbstractValidation {
         if( StringUtil.isNullOrEmpty(user.getFullName()) )
             getMessageDes().add("fullName không được để trống");
 
+        if( StringUtil.isNullOrEmpty(user.getRoleName()))
+            getMessageDes().add("roleName không được để trống");
+
         /**/
         if (!isValid())
             throw new ValidationException(this.buildValidationMessage());
