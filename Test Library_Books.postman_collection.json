@@ -170,6 +170,16 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyOTQ4MDU1LCJleHAiOjE2NjMwMDg1MzV9.eQzEpuiAD9edyGXZa-UPtYNU-qgbiHKiH1MNHpjfyhJnUeu02v1BhbtUIQajZXu3_XOM76cITnM1rAfeFb3ijg",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -206,6 +216,16 @@
 		{
 			"name": "Query book amount by author",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyOTQ4MDU1LCJleHAiOjE2NjMwMDg1MzV9.eQzEpuiAD9edyGXZa-UPtYNU-qgbiHKiH1MNHpjfyhJnUeu02v1BhbtUIQajZXu3_XOM76cITnM1rAfeFb3ijg",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -233,6 +253,16 @@
 		{
 			"name": "Query book amount by first letter",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyOTQ4MDU1LCJleHAiOjE2NjMwMDg1MzV9.eQzEpuiAD9edyGXZa-UPtYNU-qgbiHKiH1MNHpjfyhJnUeu02v1BhbtUIQajZXu3_XOM76cITnM1rAfeFb3ijg",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -305,7 +335,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":9,\r\n    \"userName\":\"luc\",\r\n    \"password\":\"12345\",\r\n    \"roleName\":\"default\",\r\n    \"fullName\":\"tran luc\"\r\n}",
+					"raw": "{\r\n    \"id\":10,\r\n    \"userName\":\"luc\",\r\n    \"password\":\"12345\",\r\n    \"roleName\":\"default\",\r\n    \"fullName\":\"tran luc\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
