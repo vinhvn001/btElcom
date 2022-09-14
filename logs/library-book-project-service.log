@@ -1,0 +1,25 @@
+14-09-2022 17:23:57.394 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+14-09-2022 17:23:57.402 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 16.0.2 on DESKTOP-QNFCC5U with PID 9564 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+14-09-2022 17:23:57.403 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+14-09-2022 17:23:57.455 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14-09-2022 17:23:57.547 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14-09-2022 17:23:58.150 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-09-2022 17:23:58.219 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+14-09-2022 17:23:59.278 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+14-09-2022 17:23:59.291 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+14-09-2022 17:23:59.292 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+14-09-2022 17:23:59.293 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+14-09-2022 17:23:59.415 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+14-09-2022 17:23:59.416 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1868 ms
+14-09-2022 17:23:59.750 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-09-2022 17:23:59.799 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+14-09-2022 17:24:00.021 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14-09-2022 17:24:00.423 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14-09-2022 17:24:01.072 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-09-2022 17:24:01.079 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-09-2022 17:24:01.929 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@662c826a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7763db0, org.springframework.security.web.header.HeaderWriterFilter@3693de48, org.springframework.web.filter.CorsFilter@5988ce84, org.springframework.security.web.authentication.logout.LogoutFilter@55eb3af1, elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter@279ee3d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dbb5636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ff92ba3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@328cd1ec, org.springframework.security.web.session.SessionManagementFilter@7ab1f500, org.springframework.security.web.access.ExceptionTranslationFilter@7f75e7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7db7e5e]
+14-09-2022 17:24:02.353 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+14-09-2022 17:24:02.374 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+14-09-2022 17:24:02.430 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+14-09-2022 17:24:02.443 INFO  e.e.l.LibraryBooksApplication.logStarted - Started LibraryBooksApplication in 5.637 seconds (JVM running for 6.306)
+14-09-2022 17:24:49.984 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
