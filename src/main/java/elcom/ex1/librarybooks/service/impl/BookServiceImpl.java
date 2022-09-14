@@ -1,9 +1,9 @@
 package elcom.ex1.librarybooks.service.impl;
 
-import elcom.ex1.librarybooks.entity.Author;
-import elcom.ex1.librarybooks.entity.Book;
-import elcom.ex1.librarybooks.entity.Category;
-import elcom.ex1.librarybooks.repository.BookRepository;
+import elcom.ex1.librarybooks.entity.library.Author;
+import elcom.ex1.librarybooks.entity.library.Book;
+import elcom.ex1.librarybooks.entity.library.Category;
+import elcom.ex1.librarybooks.repository.library.BookRepository;
 import elcom.ex1.librarybooks.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package elcom.ex1.librarybooks.validation;
 
-import elcom.ex1.librarybooks.entity.User;
+import elcom.ex1.librarybooks.entity.library.User;
 import elcom.ex1.librarybooks.utils.StringUtil;
 import javax.validation.ValidationException;
 

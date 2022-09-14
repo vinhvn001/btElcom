@@ -1,8 +1,8 @@
 package elcom.ex1.librarybooks.service.impl;
 
 import elcom.ex1.librarybooks.auth.CustomUserDetails;
-import elcom.ex1.librarybooks.entity.User;
-import elcom.ex1.librarybooks.repository.UserRepository;
+import elcom.ex1.librarybooks.entity.library.User;
+import elcom.ex1.librarybooks.repository.library.UserRepository;
 import elcom.ex1.librarybooks.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

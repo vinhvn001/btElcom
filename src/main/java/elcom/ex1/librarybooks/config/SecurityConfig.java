@@ -74,5 +74,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         System.out.println(encoder.encode("1234"));
         System.out.println(encoder.encode("123"));
         System.out.println(encoder.encode("12345"));
+
     }
     }

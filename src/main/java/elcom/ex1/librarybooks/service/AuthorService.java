@@ -1,7 +1,7 @@
 package elcom.ex1.librarybooks.service;
 
 
-import elcom.ex1.librarybooks.entity.Author;
+import elcom.ex1.librarybooks.entity.library.Author;
 
 public interface AuthorService {
     Author findById(Long id);

@@ -1,7 +1,7 @@
 package elcom.ex1.librarybooks.service;
 
 
-import elcom.ex1.librarybooks.entity.Category;
+import elcom.ex1.librarybooks.entity.library.Category;
 
 
 

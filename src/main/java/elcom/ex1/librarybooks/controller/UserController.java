@@ -1,13 +1,14 @@
 package elcom.ex1.librarybooks.controller;
 
 
-import elcom.ex1.librarybooks.entity.User;
+import elcom.ex1.librarybooks.entity.library.User;
 import elcom.ex1.librarybooks.service.UserService;
 import elcom.ex1.librarybooks.utils.JSONConverter;
 import elcom.ex1.librarybooks.utils.StringUtil;
 import elcom.ex1.librarybooks.validation.UserValidation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -24,7 +25,7 @@ import java.util.List;
 public class UserController {
 
     private static final Logger LOGGER =  LoggerFactory.getLogger(UserController.class);
-
+    @Autowired
     private final UserService userService;
 
 

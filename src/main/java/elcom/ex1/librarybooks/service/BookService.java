@@ -1,9 +1,9 @@
 package elcom.ex1.librarybooks.service;
 
 
-import elcom.ex1.librarybooks.entity.Author;
-import elcom.ex1.librarybooks.entity.Book;
-import elcom.ex1.librarybooks.entity.Category;
+import elcom.ex1.librarybooks.entity.library.Author;
+import elcom.ex1.librarybooks.entity.library.Book;
+import elcom.ex1.librarybooks.entity.library.Category;
 
 
 public interface BookService {

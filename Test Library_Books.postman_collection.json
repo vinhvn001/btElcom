@@ -372,7 +372,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/user/9",
+					"raw": "http://localhost:8080/user/10",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -380,7 +380,107 @@
 					"port": "8080",
 					"path": [
 						"user",
-						"9"
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get borrowed list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMTQ0NDIzLCJleHAiOjE2NjMyMDQ5MDN9.VXG6yRReUC5IyS4muXIurWbIzwjWphogkaZm4d5wR0w48dITdRpel81zFLIoZfdH6Nr-vsBUdKs0WkGqLp0P5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"hoang\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/borrow/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get borrowed list by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/borrow/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Borrow",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMTI2OTYzLCJleHAiOjE2NjMxODc0NDN9.jErFSgWoL94-LCyKK1J5Oy4hOw7317odqjnmC7daMo-n316FmXPeQTVZQCVn1rPUWavY7pLo4UDNkEykQaPE8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": \"4\",\r\n\"borrowerId\": {\r\n    \"id\":\"4\"\r\n    },\r\n\"bookId\":{\r\n    \"id\":\"3\"\r\n},\r\n\"limitDate\":\"2022-09-20 \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/borrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow"
 					]
 				}
 			},

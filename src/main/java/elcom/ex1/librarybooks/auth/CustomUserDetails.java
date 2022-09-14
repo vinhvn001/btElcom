@@ -1,6 +1,6 @@
 package elcom.ex1.librarybooks.auth;
 
-import elcom.ex1.librarybooks.entity.User;
+import elcom.ex1.librarybooks.entity.library.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

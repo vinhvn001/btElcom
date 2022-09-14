@@ -4,6 +4,7 @@ import elcom.ex1.librarybooks.auth.CustomUserDetails;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.jsonwebtoken.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -13,7 +14,8 @@ public class JwtTokenProvider {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtTokenProvider.class);
 
-    private final String JWT_SECRET ="elcom_08_2022";
+    @Value("${jwt.secret}")
+    private  String JWT_SECRET ;
 
     private final Long JWT_EXPIRATION = 60480000L;
 

@@ -1,6 +1,6 @@
 package elcom.ex1.librarybooks.controller;
 
-import elcom.ex1.librarybooks.entity.Author;
+import elcom.ex1.librarybooks.entity.library.Author;
 import elcom.ex1.librarybooks.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

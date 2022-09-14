@@ -1,6 +1,6 @@
 package elcom.ex1.librarybooks.service;
 
-import elcom.ex1.librarybooks.entity.User;
+import elcom.ex1.librarybooks.entity.library.User;
 
 import java.util.List;
 

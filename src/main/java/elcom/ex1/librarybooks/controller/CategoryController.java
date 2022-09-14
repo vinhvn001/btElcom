@@ -1,6 +1,6 @@
 package elcom.ex1.librarybooks.controller;
 
-import elcom.ex1.librarybooks.entity.Category;
+import elcom.ex1.librarybooks.entity.library.Category;
 import elcom.ex1.librarybooks.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
