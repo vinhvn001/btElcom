@@ -6,11 +6,11 @@ import elcom.ex1.librarybooks.entity.library.Borrow;
 import elcom.ex1.librarybooks.entity.library.User;
 import elcom.ex1.librarybooks.service.BookService;
 import elcom.ex1.librarybooks.service.BorrowService;
-import elcom.ex1.librarybooks.service.UserService;
 import elcom.ex1.librarybooks.utils.JSONConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,6 +20,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.ValidationException;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -58,22 +59,42 @@ public class BorrowController {
         return new ResponseEntity<>(borrowList,HttpStatus.OK);
     }
 
- /*   @GetMapping(value = "/findByBorrowerId")
-    public ResponseEntity<Borrow> getByBorrowerId(@RequestParam(value = "borrowerId") @RequestBody Long borrowerId){
-        LOGGER.info("borrowerId[{}]", borrowerId);
+    @GetMapping(value = "/findByUserId")
+    public ResponseEntity<List<Borrow>> getByUserId(@RequestParam(value = "userId", required = false)@RequestBody  User userId){
+        LOGGER.info("userId[{}]", userId);
 
-       List<Borrow> borrowList = (List<Borrow>) borrowService.findByBorrowerId(borrowerId);
+       List<Borrow> borrowList =  borrowService.findByUserId(userId);
         if(borrowList == null)
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         return new ResponseEntity<>(borrowList,HttpStatus.OK);
     }
-*/
+
+    @GetMapping(value= "/findByBookId")
+    public ResponseEntity<List<Borrow>> getByBookId(@RequestParam(value = "bookId", required = false) Book bookId){
+        LOGGER.info("bookId[{}]", bookId);
+
+        List<Borrow> borrowList =  borrowService.findByBookId(bookId);
+        if(borrowList == null)
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(borrowList,HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/findBorrowAmountInTime")
+
+    public ResponseEntity<Integer>findBorrowAmountInTime(@RequestParam(value = "startDate", required = false) @DateTimeFormat(pattern = "yyyy-MM-dd")Date startDate,
+                                                         @RequestParam(value = "endDate", required = false)@DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate){
+        LOGGER.info("startDate[{}], endDate[{}]", startDate , endDate);
+
+        Integer borrowAmount = borrowService.borrowAmountInTime(startDate, endDate);
+        if(borrowAmount == null)
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return  new ResponseEntity<>(borrowAmount, HttpStatus.OK);
+    }
     @PostMapping("")
     public ResponseEntity<Borrow> create(@RequestBody Borrow borrowedList, UriComponentsBuilder builder){
         LOGGER.info("{}", JSONConverter.toJSON(borrowedList));
 
-        if(borrowedList.getId()== null || borrowedList.getBorrowerId() == null
-                || borrowedList.getBookId() == null || borrowedList.getLimitDate() == null )
+        if( borrowedList.getUserId() == null || borrowedList.getBookId() == null || borrowedList.getLimitDate() == null )
             throw new ValidationException("Không được để trống các field");
 
         Book book = bookService.findById(borrowedList.getBookId().getId());
@@ -83,7 +104,7 @@ public class BorrowController {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         book.borrowedOne();
-        bookService.create(book);
+        bookService.update(borrowedList.getBookId().getId(),book);
 
         borrowService.save(borrowedList);
         HttpHeaders headers = new HttpHeaders();
@@ -95,7 +116,7 @@ public class BorrowController {
     public ResponseEntity<Borrow> update(@PathVariable Long id, @RequestBody Borrow borrowedList ){
         LOGGER.info("id[{}] - {} ", id, JSONConverter.toJSON(borrowedList));
 
-        if (id == null || borrowedList.getBookId() ==null || borrowedList.getBorrowerId()== null
+        if (id == null || borrowedList.getBookId() ==null || borrowedList.getUserId()== null
                 || borrowedList.getLimitDate() == null)
             throw new ValidationException("Không được để trống field");
 
@@ -105,7 +126,7 @@ public class BorrowController {
 
         currentList.setId(borrowedList.getId());
         currentList.setBookId(borrowedList.getBookId());
-        currentList.setBorrowerId(borrowedList.getBorrowerId());
+        currentList.setUserId(borrowedList.getUserId());
 
         borrowService.save(currentList);
         return new ResponseEntity<>(currentList,HttpStatus.OK);
@@ -127,5 +148,23 @@ public class BorrowController {
         borrowService.remove(borrowedList);
 
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @PutMapping(value="/return/{id}")
+    public ResponseEntity<Borrow> returnBorrow(@PathVariable Long id){
+        LOGGER.info("return() --> id{{}}", id);
+
+        Borrow borrow = borrowService.findById(id);
+        if(borrow == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);}
+        Book book =bookService.findById(borrow.getBookId().getId());
+
+        book.returnOne();
+        bookService.update(borrow.getBookId().getId(), book);
+        Date currentDate = new Date();
+        borrow.setReturnDate(currentDate);
+        borrowService.save(borrow);
+
+        return new ResponseEntity<>(borrow,HttpStatus.OK );
     }
 }

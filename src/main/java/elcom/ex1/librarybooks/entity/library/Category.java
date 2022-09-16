@@ -20,7 +20,5 @@ public class Category {
     @Column(name = "CATEGORY_NAME")
     private String categoryName;
 
-    //@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
 
-    // private Collection<Book> books;
 }

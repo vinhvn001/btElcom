@@ -23,7 +23,7 @@ public class Borrow implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User borrowerId;
+    private User userId;
 
     @ManyToOne
     @JoinColumn(name = "book_id", referencedColumnName = "id")
@@ -34,6 +34,9 @@ public class Borrow implements Serializable {
 
     @Column(name = "limit_date")
     private Date limitDate;
+
+    @Column(name = "return_date")
+    private Date returnDate;
 
     @PrePersist
     void preInsert() {

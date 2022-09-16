@@ -1,23 +1,22 @@
 package elcom.ex1.librarybooks.service.impl;
 
+import elcom.ex1.librarybooks.entity.library.Book;
 import elcom.ex1.librarybooks.entity.library.Borrow;
+import elcom.ex1.librarybooks.entity.library.User;
 import elcom.ex1.librarybooks.repository.library.BorrowRepository;
 import elcom.ex1.librarybooks.service.BorrowService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
 public class BorrowServiceImpl implements BorrowService {
 
     @Autowired
-    private BorrowRepository borrowRepository;
+    private  BorrowRepository borrowRepository;
 
-   /* @Autowired
-    public BorrowedListServiceImpl(BorrowedListRepository borrowedListRepository) {
-        this.borrowedListRepository = borrowedListRepository;
-    }*/
 
     @Override
     public List<Borrow> findAll() {
@@ -30,11 +29,6 @@ public class BorrowServiceImpl implements BorrowService {
     }
 
     @Override
-    public List<Borrow> findByBorrowerId(Long borrowerId) {
-        return borrowRepository.findByBorrowerId(borrowerId);
-    }
-
-    @Override
     public void save(Borrow borrowedList) {
          borrowRepository.save(borrowedList);
     }
@@ -42,5 +36,21 @@ public class BorrowServiceImpl implements BorrowService {
     @Override
     public void remove(Borrow borrowedList) {
         borrowRepository.delete(borrowedList);
+    }
+
+    @Override
+    public List<Borrow> findByBookId(Book bookId) {
+        return borrowRepository.findByBookId(bookId);
+    }
+
+    @Override
+    public List<Borrow> findByUserId(User userId) {
+
+        return borrowRepository.findByUserId(userId);
+    }
+
+    @Override
+    public Integer borrowAmountInTime(Date startDate, Date endDate) {
+        return borrowRepository.borrowAmountInTime(startDate, endDate);
     }
 }

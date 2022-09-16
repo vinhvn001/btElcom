@@ -175,7 +175,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyOTQ4MDU1LCJleHAiOjE2NjMwMDg1MzV9.eQzEpuiAD9edyGXZa-UPtYNU-qgbiHKiH1MNHpjfyhJnUeu02v1BhbtUIQajZXu3_XOM76cITnM1rAfeFb3ijg",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMwMTgwLCJleHAiOjE2NjMyOTA2NjB9.wNjqTXdVCRbTDPUeylriyd9jphsP10q3JTC6jU92IB00ZWbMtGIUzkkRo4DN9STKBxPFF4SCnhr_2Oo8oFhL9Q",
 							"type": "string"
 						}
 					]
@@ -221,7 +221,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyOTQ4MDU1LCJleHAiOjE2NjMwMDg1MzV9.eQzEpuiAD9edyGXZa-UPtYNU-qgbiHKiH1MNHpjfyhJnUeu02v1BhbtUIQajZXu3_XOM76cITnM1rAfeFb3ijg",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMwMTgwLCJleHAiOjE2NjMyOTA2NjB9.wNjqTXdVCRbTDPUeylriyd9jphsP10q3JTC6jU92IB00ZWbMtGIUzkkRo4DN9STKBxPFF4SCnhr_2Oo8oFhL9Q",
 							"type": "string"
 						}
 					]
@@ -229,7 +229,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/book/statistic_by_author/?authorId=1",
+					"raw": "http://localhost:8080/book/statistic_by_author/?authorId=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -243,7 +243,7 @@
 					"query": [
 						{
 							"key": "authorId",
-							"value": "1"
+							"value": "2"
 						}
 					]
 				}
@@ -258,7 +258,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYyOTQ4MDU1LCJleHAiOjE2NjMwMDg1MzV9.eQzEpuiAD9edyGXZa-UPtYNU-qgbiHKiH1MNHpjfyhJnUeu02v1BhbtUIQajZXu3_XOM76cITnM1rAfeFb3ijg",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMwMTgwLCJleHAiOjE2NjMyOTA2NjB9.wNjqTXdVCRbTDPUeylriyd9jphsP10q3JTC6jU92IB00ZWbMtGIUzkkRo4DN9STKBxPFF4SCnhr_2Oo8oFhL9Q",
 							"type": "string"
 						}
 					]
@@ -397,7 +397,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMTQ0NDIzLCJleHAiOjE2NjMyMDQ5MDN9.VXG6yRReUC5IyS4muXIurWbIzwjWphogkaZm4d5wR0w48dITdRpel81zFLIoZfdH6Nr-vsBUdKs0WkGqLp0P5Q",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjkzNTgzLCJleHAiOjE2NjMzNTQwNjN9.czfbZusxcPqUaarv6v5Xg3d8DkB12LxKs_crunJINkGJIdN-LZFKsGuYZByeNt7w0yzZmbQeUOx4w5wOl9VCdw",
 							"type": "string"
 						}
 					]
@@ -431,6 +431,16 @@
 		{
 			"name": "Get borrowed list by id",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMyOTM1LCJleHAiOjE2NjMyOTM0MTV9.chmrntBHnjrEJ4tL0gnnRGqlfkaYl6J8mxjinbDN-IqGObajOW4CK2ZuN_0GGIcbog0hIV13LlHL12xN-ZxHhA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -449,14 +459,14 @@
 			"response": []
 		},
 		{
-			"name": "Create Borrow",
+			"name": "Borrow book",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMTI2OTYzLCJleHAiOjE2NjMxODc0NDN9.jErFSgWoL94-LCyKK1J5Oy4hOw7317odqjnmC7daMo-n316FmXPeQTVZQCVn1rPUWavY7pLo4UDNkEykQaPE8A",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMyOTM1LCJleHAiOjE2NjMyOTM0MTV9.chmrntBHnjrEJ4tL0gnnRGqlfkaYl6J8mxjinbDN-IqGObajOW4CK2ZuN_0GGIcbog0hIV13LlHL12xN-ZxHhA",
 							"type": "string"
 						}
 					]
@@ -465,7 +475,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"id\": \"4\",\r\n\"borrowerId\": {\r\n    \"id\":\"4\"\r\n    },\r\n\"bookId\":{\r\n    \"id\":\"3\"\r\n},\r\n\"limitDate\":\"2022-09-20 \"\r\n}",
+					"raw": "{\r\n\"userId\": {\r\n    \"id\":\"3\"\r\n    },\r\n\"bookId\":{\r\n    \"id\":\"3\"\r\n},\r\n\"limitDate\":\"2022-09-20 \"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -481,6 +491,163 @@
 					"port": "8080",
 					"path": [
 						"borrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get borrowed list by user id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjkzNTgzLCJleHAiOjE2NjMzNTQwNjN9.czfbZusxcPqUaarv6v5Xg3d8DkB12LxKs_crunJINkGJIdN-LZFKsGuYZByeNt7w0yzZmbQeUOx4w5wOl9VCdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/borrow/findByUserId/?userId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"findByUserId",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get borrowed list by book id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/borrow/findByBookId/?bookId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"findByBookId",
+						""
+					],
+					"query": [
+						{
+							"key": "bookId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get borrow amount in betweentime",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjk3Njk0LCJleHAiOjE2NjMzNTgxNzR9.9aZxMo1VJYBR4oYbDH6WudHYCbpOU8v4oIRQUbze8xkAHvs5mmLFGY4mmyHCMzyfdhVHUJqAk9JUF5hakI2ZuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/borrow/findBorrowAmountInTime/?startDate=2022-09-14&endDate=2022-09-17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"findBorrowAmountInTime",
+						""
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-09-14"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-09-17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMzAxMzE0LCJleHAiOjE2NjMzNjE3OTR9.SkNDWPK0y2MAy468MYDlvkUJCG81njuVuqyffOTuroKsXjKk1Rf7n9bGLlhOE-7aRB40TARQi54N1oaLzvsyzw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/borrow/return/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"return",
+						"6"
 					]
 				}
 			},

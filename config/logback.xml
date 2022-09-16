@@ -5,7 +5,7 @@
         <encoder>
             <pattern>
                <!-- %d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger{36}.%M - %msg%n-->
-                %black(%d{ISO8601}) %highlight(%-5level) [%green(%t)] %yellow(%C{1.}): %msg%n%throwable
+                %black(%d{ISO8601}) %highlight(%-5level) [%green(%t)] %blue(%C{1.}): %msg%n%throwable
             </pattern>
         </encoder>
     </appender>
@@ -15,26 +15,36 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
             <!-- daily rollover -->
-            <fileNamePattern>logs/library-book-project-service.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/library-book-project-service-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 
-            <!-- rollover stop when reach 10mb -->
+            <!-- rollover stop when reach 1mb -->
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>10MB</maxFileSize>
+                <maxFileSize>1MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
-
         <encoder>
             <!-- <pattern>%d %p %C{1.} [%t] %m%n</pattern> -->
             <pattern>
                 %d{dd-MM-yyyy HH:mm:ss.SSS} %-5level %logger{36}.%M - %msg%n
             </pattern>
         </encoder>
-
     </appender>
+    <!--    <springProperty name="spring.log.url" source="spring.log.url"/>
+        <springProperty name="spring.log.username" source="spring.log.username"/>
+        <springProperty name="spring.log.password" source="spring.log.password"/>
+
+    <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+            <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+                <url>${spring.log.url}</url>
+                <user>${spring.log.username}</user>
+                <password>${spring.log.password}</password>
+            </connectionSource>
+    </appender> -->
 
     <root level = "INFO" >
         <appender-ref ref="Console"/>
         <appender-ref ref="ROLLIN"/>
+       <!-- <appender-ref ref="DB"/>-->
     </root>
 </configuration>
