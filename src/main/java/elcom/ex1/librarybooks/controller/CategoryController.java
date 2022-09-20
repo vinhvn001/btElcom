@@ -16,7 +16,7 @@ public class CategoryController {
         this.categoryService = categoryService;
     }
 
-   // @Cacheable(value="category", key="#id")
+    @Cacheable(value="category", key="#p0")
     @GetMapping("/{id}")
     public Category findById(@PathVariable Long id){
         return categoryService.findById(id);
@@ -32,12 +32,13 @@ public class CategoryController {
         return categoryService.update(id, category);
     }
 
+
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
         categoryService.delete(id);
     }
 
-   // @Cacheable(value="category", key="#all")
+
     @GetMapping
     public Iterable<Category> findAll(){
         return categoryService.findAll();
