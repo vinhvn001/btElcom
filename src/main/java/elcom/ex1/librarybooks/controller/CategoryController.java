@@ -3,6 +3,7 @@ package elcom.ex1.librarybooks.controller;
 import elcom.ex1.librarybooks.entity.library.Category;
 import elcom.ex1.librarybooks.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,7 +16,7 @@ public class CategoryController {
         this.categoryService = categoryService;
     }
 
-
+   // @Cacheable(value="category", key="#id")
     @GetMapping("/{id}")
     public Category findById(@PathVariable Long id){
         return categoryService.findById(id);
@@ -36,6 +37,7 @@ public class CategoryController {
         categoryService.delete(id);
     }
 
+   // @Cacheable(value="category", key="#all")
     @GetMapping
     public Iterable<Category> findAll(){
         return categoryService.findAll();

@@ -167,4 +167,17 @@ public class BorrowController {
 
         return new ResponseEntity<>(borrow,HttpStatus.OK );
     }
+
+    @GetMapping(value="/theMostBorrowedBook")
+    public ResponseEntity<Integer> findMostBorrowedBook(@RequestParam(value = "startDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd")Date startDate,
+                                                                @RequestParam(value = "endDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate )
+    {
+        LOGGER.info("startDate[{}], endDate[{}]", startDate , endDate);
+
+        Integer response = borrowService.maxBookIdInTime(startDate, endDate);
+        if(response == null)
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return  new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
 }

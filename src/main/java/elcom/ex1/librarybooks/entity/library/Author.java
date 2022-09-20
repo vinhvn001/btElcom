@@ -3,6 +3,7 @@ package elcom.ex1.librarybooks.entity.library;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "AUTHOR")
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Author {
+public class Author implements Serializable {
 
     @Id
     @Column(name = "AUTHOR_ID")

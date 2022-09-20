@@ -6,9 +6,9 @@ import elcom.ex1.librarybooks.entity.library.User;
 import org.hibernate.annotations.Parameter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import java.util.Date;
 import java.util.List;
 
@@ -23,5 +23,8 @@ public interface BorrowRepository extends JpaRepository<Borrow, Long> {
 
     @Query("select count(a)  from Borrow a where a.borrowedDate between :startDate and :endDate ")
     Integer borrowAmountInTime(@RequestParam Date startDate,@RequestParam Date endDate);
+
+    @Query(value ="select * a.bookId from Borrow a where a.borrowedDate between :startDate and :endDate group by a.bookId ORDER BY count(a.bookId) DESC LIMIT 1", nativeQuery =true)
+    Integer maxBookIdInTime(@RequestParam Date startDate, @RequestParam Date endDate);
 
 }

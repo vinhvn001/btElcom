@@ -23,4 +23,7 @@ public interface BorrowService {
    List<Borrow>findByBookId(Book bookId);
 
    Integer borrowAmountInTime(Date startDate, Date endDate);
+
+
+    Integer maxBookIdInTime(Date startDate, Date endDate);
 }

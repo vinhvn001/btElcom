@@ -1,0 +1,6 @@
+spring:
+  library.datasource:
+    username: thevinhvn001
+    password: thevinhvn001
+    url: jdbc:mysql://127.0.0.1:3306/book_manage?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+

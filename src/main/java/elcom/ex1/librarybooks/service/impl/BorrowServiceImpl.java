@@ -53,4 +53,9 @@ public class BorrowServiceImpl implements BorrowService {
     public Integer borrowAmountInTime(Date startDate, Date endDate) {
         return borrowRepository.borrowAmountInTime(startDate, endDate);
     }
+
+    @Override
+    public Integer maxBookIdInTime(Date startDate, Date endDate) {
+        return  borrowRepository.maxBookIdInTime(startDate, endDate);
+    }
 }
