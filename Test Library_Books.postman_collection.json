@@ -652,6 +652,47 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Rabbit Worker ex",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzNjY3NzQ2LCJleHAiOjE2NjM3MjgyMjZ9.PWgM9hxuWbi1nW_l2XaXlBjHAwYj6zSNWZxrsjuhH7QcWUvRk__flUYrpHtc0DTvvtwKeVTp2UQP-ZwpuoC_xQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rabbitmq/worker/?message=hello&numOfSend=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rabbitmq",
+						"worker",
+						""
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "hello"
+						},
+						{
+							"key": "numOfSend",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
