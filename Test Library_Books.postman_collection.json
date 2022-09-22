@@ -693,6 +693,84 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Rabbit Pub/Sub ex",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzODEyNjA3LCJleHAiOjE2NjM4NzMwODd9.0GsG-ZmjLqbQzhbvBASCEHevmZF6aWouFRdYV4jWIZMX98Hh24cBsu1w39_cFD1clwgvaCZkToEbvWTFeGw4yg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rabbitmq/publisher/?message=hello&type=direct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rabbitmq",
+						"publisher",
+						""
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "hello"
+						},
+						{
+							"key": "type",
+							"value": "direct"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rabbit Rpc ex",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzODEyNjA3LCJleHAiOjE2NjM4NzMwODd9.0GsG-ZmjLqbQzhbvBASCEHevmZF6aWouFRdYV4jWIZMX98Hh24cBsu1w39_cFD1clwgvaCZkToEbvWTFeGw4yg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rabbitmq/rpc/?number=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rabbitmq",
+						"rpc",
+						""
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
