@@ -771,6 +771,74 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Book Esearch by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0MzUyODE0LCJleHAiOjE2NjQ0MTMyOTR9.3i6w5P1cja_U8nY9Q1s6v5HWCM8XE2TJCCBwSAvgo-C-4rUdmNemv0jiZDfLuQiemUJDFEt_Va-fwqHR0ato1A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"settings\" : {\r\n        \"index\" : {\r\n            \"number_of_shards\" : 2, \r\n            \"number_of_replicas\" : 1 \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookEs/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookEs",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Esearch by book name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookEs/findByName?bookName= \"Tieng viet 5\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookEs",
+						"findByName"
+					],
+					"query": [
+						{
+							"key": "bookName",
+							"value": " \"Tieng viet 5\""
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

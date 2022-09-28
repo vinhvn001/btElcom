@@ -1,8 +1,10 @@
 package elcom.ex1.librarybooks.controller;
 
+import elcom.ex1.librarybooks.entity.elastic.BookEs;
 import elcom.ex1.librarybooks.entity.library.Author;
 import elcom.ex1.librarybooks.entity.library.Book;
 import elcom.ex1.librarybooks.entity.library.Category;
+import elcom.ex1.librarybooks.service.BookEsService;
 import elcom.ex1.librarybooks.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -12,11 +14,13 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/book")
 public class BookController {
 
-    @Autowired
-    private final BookService bookService;
 
-    public BookController(BookService bookService) {
+    private final BookService bookService;
+    private final BookEsService bookEsService;
+    @Autowired
+    public BookController(BookService bookService, BookEsService bookEsService) {
         this.bookService = bookService;
+        this.bookEsService = bookEsService;
     }
 
     @GetMapping("/{id}")
@@ -27,12 +31,18 @@ public class BookController {
 
     @PostMapping
     public Book create(@RequestBody Book book){
-
+        Long id = book.getId();
+        String name = book.getBookName();
+        BookEs bookEs = new BookEs(id, name);
+        bookEsService.save(bookEs);
         return bookService.create(book);
     }
 
     @PutMapping("/{id}")
     public Book update(@PathVariable Long id, @RequestBody Book book){
+        String name = book.getBookName();
+        BookEs bookEs = new BookEs(id, name);
+        bookEsService.save(bookEs);
         return bookService.update(id, book);
     }
 

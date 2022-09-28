@@ -1,0 +1,41 @@
+package elcom.ex1.librarybooks.service.impl;
+
+import elcom.ex1.librarybooks.entity.elastic.BookEs;
+import elcom.ex1.librarybooks.repository.elastic.BookEsRepository;
+import elcom.ex1.librarybooks.service.BookEsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class BookEsImpl implements BookEsService {
+    @Autowired
+    private  BookEsRepository bookEsRepository;
+
+
+    @Override
+    public BookEs save(BookEs bookEs) {
+        return bookEsRepository.save(bookEs);
+    }
+
+    @Override
+    public void delete(BookEs bookEs) {
+        bookEsRepository.delete(bookEs);
+    }
+
+    @Override
+    public BookEs findById(Long id) {
+        return bookEsRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public Iterable<BookEs> findAll() {
+        return bookEsRepository.findAll();
+    }
+
+    @Override
+    public List<BookEs> findByName(String name) {
+        return bookEsRepository.findByName(name);
+    }
+}
