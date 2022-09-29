@@ -18,7 +18,10 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Arrays;
+import java.util.Date;
 
 @EnableWebSecurity
 @Profile("dev")
@@ -72,10 +75,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     public static void main(String[] args) {
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        System.out.println(encoder.encode("1234"));
-        System.out.println(encoder.encode("123"));
-        System.out.println(encoder.encode("12345"));
+//        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+//        System.out.println(encoder.encode("1234"));
+//        System.out.println(encoder.encode("123"));
+//        System.out.println(encoder.encode("12345"));
+
 
     }
     }
