@@ -1330,6 +1330,35 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Test Memcached ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1MTE4MDk5LCJleHAiOjE2NjUxNzg1Nzl9.6ZsoqiUcjg6NFlKt7v2Vp9x2M3m8Wu8RslhLtInPiyuLof9ueb-5U-H0-ZHy1Wpw7XjASQBdokH9iKOOxsU3XA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
