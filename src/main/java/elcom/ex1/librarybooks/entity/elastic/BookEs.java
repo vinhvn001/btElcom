@@ -20,7 +20,7 @@ public class BookEs implements Serializable {
 
     @Id
     private Long id;
-    @Field
+
     private String name;
 
 }

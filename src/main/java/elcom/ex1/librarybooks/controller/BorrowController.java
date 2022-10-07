@@ -104,7 +104,7 @@ public class BorrowController {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         book.borrowedOne();
-        bookService.update(borrowedList.getBookId().getId(),book);
+        bookService.update(book);
 
         borrowService.save(borrowedList);
         HttpHeaders headers = new HttpHeaders();
@@ -160,7 +160,7 @@ public class BorrowController {
         Book book =bookService.findById(borrow.getBookId().getId());
 
         book.returnOne();
-        bookService.update(borrow.getBookId().getId(), book);
+        bookService.update(book);
         Date currentDate = new Date();
         borrow.setReturnDate(currentDate);
         borrowService.save(borrow);
@@ -169,15 +169,26 @@ public class BorrowController {
     }
 
     @GetMapping(value="/theMostBorrowedBook")
-    public ResponseEntity<Integer> findMostBorrowedBook(@RequestParam(value = "startDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd")Date startDate,
+    public ResponseEntity<List<Object[]>> findMostBorrowedBook(@RequestParam(value = "startDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd")Date startDate,
                                                                 @RequestParam(value = "endDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate )
     {
         LOGGER.info("startDate[{}], endDate[{}]", startDate , endDate);
 
-        Integer response = borrowService.maxBookIdInTime(startDate, endDate);
+        List<Object[]> response = borrowService.maxBookInTime(startDate, endDate);
         if(response == null)
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         return  new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @GetMapping(value= "/borrowInTime")
+    public ResponseEntity<List<Object[]>> borrowInTime(@RequestParam(value = "startDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd")Date startDate,
+                                                       @RequestParam(value = "endDate", required = true) @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate)
+    {
+        LOGGER.info("startDate[{}], endDate[{}]", startDate , endDate);
+
+        List<Object[]> response = borrowService.borrowInTime(startDate, endDate);
+        if(response == null)
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return  new ResponseEntity<>(response, HttpStatus.OK);
+    }
 }

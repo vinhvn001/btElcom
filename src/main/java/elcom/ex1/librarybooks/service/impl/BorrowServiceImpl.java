@@ -6,7 +6,10 @@ import elcom.ex1.librarybooks.entity.library.User;
 import elcom.ex1.librarybooks.repository.library.BorrowRepository;
 import elcom.ex1.librarybooks.service.BorrowService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+
 
 import java.util.Date;
 import java.util.List;
@@ -55,7 +58,14 @@ public class BorrowServiceImpl implements BorrowService {
     }
 
     @Override
-    public Integer maxBookIdInTime(Date startDate, Date endDate) {
-        return  borrowRepository.maxBookIdInTime(startDate, endDate);
+    public List<Object[]> maxBookInTime(Date startDate, Date endDate) {
+        Pageable paging =  PageRequest.of(0,1);
+         return borrowRepository.maxBookInTime(startDate, endDate,paging);
+
+    }
+
+    @Override
+    public List<Object[]> borrowInTime(Date startDate, Date endDate){
+        return borrowRepository.borrowInTime(startDate, endDate);
     }
 }

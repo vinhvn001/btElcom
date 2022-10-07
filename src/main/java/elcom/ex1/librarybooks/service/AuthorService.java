@@ -6,9 +6,9 @@ import elcom.ex1.librarybooks.entity.library.Author;
 public interface AuthorService {
     Author findById(Long id);
 
-    Author create(Author author );
+    Author create(String authorName );
 
-    Author update(Long id, Author author);
+    Author update(Long id, String authorName);
 
     void delete(Long id);
 

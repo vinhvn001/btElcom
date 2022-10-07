@@ -4,6 +4,7 @@ import elcom.ex1.librarybooks.entity.library.Book;
 import elcom.ex1.librarybooks.entity.library.Borrow;
 import elcom.ex1.librarybooks.entity.library.User;
 
+import java.awt.print.Pageable;
 import java.util.Date;
 import java.util.List;
 
@@ -24,6 +25,8 @@ public interface BorrowService {
 
    Integer borrowAmountInTime(Date startDate, Date endDate);
 
+   List<Object[]> maxBookInTime(Date startDate, Date endDate);
 
-    Integer maxBookIdInTime(Date startDate, Date endDate);
+   List<Object[]> borrowInTime(Date startDate, Date endDate );
+
 }

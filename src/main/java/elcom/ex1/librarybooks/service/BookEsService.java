@@ -8,7 +8,9 @@ public interface BookEsService {
 
     BookEs save(BookEs bookEs);
 
-    void delete(BookEs bookEs);
+    BookEs update(Long id, String name);
+
+    void delete(Long id);
 
     BookEs findById(Long id);
 

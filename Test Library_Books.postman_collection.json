@@ -12,6 +12,16 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEwNDg2LCJleHAiOjE2NjQ1NzA5NjZ9.U6reIOUwO4An3gqon6sPGwfD0z0_8EOuN38KUhymXhXla-8i3YY5_dTeYaCI71NDrQ7ovb4JvA4unLJKsXkiTw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -38,10 +48,214 @@
 			"response": []
 		},
 		{
+			"name": "Create new Author",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEwNDg2LCJleHAiOjE2NjQ1NzA5NjZ9.U6reIOUwO4An3gqon6sPGwfD0z0_8EOuN38KUhymXhXla-8i3YY5_dTeYaCI71NDrQ7ovb4JvA4unLJKsXkiTw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Nguyen The Vinh"
+				},
+				"url": {
+					"raw": "http://localhost:8080/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Author",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEwNDg2LCJleHAiOjE2NjQ1NzA5NjZ9.U6reIOUwO4An3gqon6sPGwfD0z0_8EOuN38KUhymXhXla-8i3YY5_dTeYaCI71NDrQ7ovb4JvA4unLJKsXkiTw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Nguyen Van Toan"
+				},
+				"url": {
+					"raw": "http://localhost:8080/author/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"author",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/author/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"author",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Connect to Book",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTE5MDI3LCJleHAiOjE2NjQ1Nzk1MDd9.ugkijukdNR5bsiYECy5Mz3wqkTegRe1Rv0imTSPTy_oYR9jb6Z1iD8NeGJ1q4_8-oDHIjozfUg0Lgms47MldkQ",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTIzOTUxLCJleHAiOjE2NjQ1ODQ0MzF9.OZ7nuuU7htJO40UvOkqgfV04zxpD4PPEMOAZbOuV2M9h3E_5QpwxI2CPiqKtimb637tYzYSE-TEBcByAut-UfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"5\",\r\n    \"bookName\": \"Tieng anh 8\",\r\n    \"bookAmount\": 30,\r\n    \"firstLetter\": \"t\",\r\n    \"authorId\": {\r\n        \"id\": 12\r\n    },\r\n    \"categoryId\": {\r\n        \"id\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTIzOTUxLCJleHAiOjE2NjQ1ODQ0MzF9.OZ7nuuU7htJO40UvOkqgfV04zxpD4PPEMOAZbOuV2M9h3E_5QpwxI2CPiqKtimb637tYzYSE-TEBcByAut-UfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEzNDUxLCJleHAiOjE2NjQ1NzM5MzF9.mowLFX5OCW6NyqbnvKT4nBt5NQrKe3zcqLwBfbTlvtYRQpD7DywQcWGWoUbazykOkuV6ags3Z1iAiCIU3SWSRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"bookName\": \"Tieng viet 8\",\r\n    \"bookAmount\": 30,\r\n    \"firstLetter\": \"t\",\r\n    \"authorId\": {\r\n        \"id\": 12\r\n    },\r\n    \"categoryId\": {\r\n        \"id\": 3\r\n    }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:8080/book",
 					"protocol": "http",
@@ -62,6 +276,16 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEwNDg2LCJleHAiOjE2NjQ1NzA5NjZ9.U6reIOUwO4An3gqon6sPGwfD0z0_8EOuN38KUhymXhXla-8i3YY5_dTeYaCI71NDrQ7ovb4JvA4unLJKsXkiTw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -90,14 +314,24 @@
 		{
 			"name": "create new category",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEwNDg2LCJleHAiOjE2NjQ1NzA5NjZ9.U6reIOUwO4An3gqon6sPGwfD0z0_8EOuN38KUhymXhXla-8i3YY5_dTeYaCI71NDrQ7ovb4JvA4unLJKsXkiTw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":5,\r\n    \"categoryName\":\"Cuoc song\"\r\n}",
+					"raw": "The thao",
 					"options": {
 						"raw": {
-							"language": "json"
+							"language": "text"
 						}
 					}
 				},
@@ -122,10 +356,10 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"categoryName\":\"tien te\"\r\n}",
+					"raw": "Sach nuoc ngoai",
 					"options": {
 						"raw": {
-							"language": "json"
+							"language": "text"
 						}
 					}
 				},
@@ -147,10 +381,20 @@
 		{
 			"name": "Delete category",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTEwNDg2LCJleHAiOjE2NjQ1NzA5NjZ9.U6reIOUwO4An3gqon6sPGwfD0z0_8EOuN38KUhymXhXla-8i3YY5_dTeYaCI71NDrQ7ovb4JvA4unLJKsXkiTw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/category/5",
+					"raw": "http://localhost:8080/category/11",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -158,7 +402,7 @@
 					"port": "8080",
 					"path": [
 						"category",
-						"5"
+						"11"
 					]
 				}
 			},
@@ -214,14 +458,14 @@
 			"response": []
 		},
 		{
-			"name": "Query book amount by author",
+			"name": "List Book by Author",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMwMTgwLCJleHAiOjE2NjMyOTA2NjB9.wNjqTXdVCRbTDPUeylriyd9jphsP10q3JTC6jU92IB00ZWbMtGIUzkkRo4DN9STKBxPFF4SCnhr_2Oo8oFhL9Q",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTI3Mjc3LCJleHAiOjE2NjQ1ODc3NTd9.rpNz21b95aeXaemZO1edq70zDei6YRimK51ezEj7D4jnJBDWPbEA_3wJyd6gjAGdGqx0K_IRLZvWGvwK0IGwvA",
 							"type": "string"
 						}
 					]
@@ -251,14 +495,14 @@
 			"response": []
 		},
 		{
-			"name": "Query book amount by first letter",
+			"name": "List Book by first Letter",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjMwMTgwLCJleHAiOjE2NjMyOTA2NjB9.wNjqTXdVCRbTDPUeylriyd9jphsP10q3JTC6jU92IB00ZWbMtGIUzkkRo4DN9STKBxPFF4SCnhr_2Oo8oFhL9Q",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTI3ODE4LCJleHAiOjE2NjQ1ODgyOTh9.F4sYmYS6TMa7d6PaVKg228rh-_nvAVgQGHPgFeZ0DXP9Cl2HwWFSwEN0erAIkkAhZdgaxC4UcSOeVxqBRjWwEQ",
 							"type": "string"
 						}
 					]
@@ -282,6 +526,171 @@
 							"key": "firstLetter",
 							"value": "T"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List book by Book name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NTI3ODE4LCJleHAiOjE2NjQ1ODgyOTh9.F4sYmYS6TMa7d6PaVKg228rh-_nvAVgQGHPgFeZ0DXP9Cl2HwWFSwEN0erAIkkAhZdgaxC4UcSOeVxqBRjWwEQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/statistic_book_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"statistic_book_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postgre Db Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NzY0NDMyLCJleHAiOjE2NjQ4MjQ5MTJ9.fC8wYxXn9cCDkrnKy__qlSJ5-LjP0YcHVeju2BQg2tDPcap9hDpetM9J7c-NofnFek4eOcv9fjgfQOH6yWbF7A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postgre create ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NzY3MTE4LCJleHAiOjE2NjQ4Mjc1OTh9.pgHX1LNNS1QFhZvr_mBqlzDTINdr066RObD2ZQgMjFddLKI0YEdlxMz2JZpurKwEVqjwA4lIJSO1SAcLTIcn4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"8A\",\r\n    \"studentAmount\":\"33\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postgre update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NzY3MTE4LCJleHAiOjE2NjQ4Mjc1OTh9.pgHX1LNNS1QFhZvr_mBqlzDTINdr066RObD2ZQgMjFddLKI0YEdlxMz2JZpurKwEVqjwA4lIJSO1SAcLTIcn4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"7\",\r\n    \"name\":\"7D\",\r\n    \"studentAmount\":30\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostGre Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0NzY3MTE4LCJleHAiOjE2NjQ4Mjc1OTh9.pgHX1LNNS1QFhZvr_mBqlzDTINdr066RObD2ZQgMjFddLKI0YEdlxMz2JZpurKwEVqjwA4lIJSO1SAcLTIcn4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/school/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"7"
 					]
 				}
 			},
@@ -357,7 +766,7 @@
 			"response": []
 		},
 		{
-			"name": "Get new user after created",
+			"name": "get user",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -372,7 +781,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/user/10",
+					"raw": "http://localhost:8080/user/100",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -380,7 +789,7 @@
 					"port": "8080",
 					"path": [
 						"user",
-						"10"
+						"100"
 					]
 				}
 			},
@@ -554,6 +963,88 @@
 						{
 							"key": "bookId",
 							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List borrowed in Specific Time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0ODU1MTY2LCJleHAiOjE2NjQ5MTU2NDZ9.5BLuLtik5bzCV32eKSI6NlihRkV1KZX2_-YQDteyNihdSgs-K9XdgHMSYu42I_DIocl-zIE-W3UQSBOAPjj84Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/borrow/borrowInTime/?startDate=2022-06-01&endDate=2022-10-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"borrowInTime",
+						""
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-06-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-10-30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "The most borrowed book in time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0ODYzODc5LCJleHAiOjE2NjQ5MjQzNTl9.WBx2HlnUPPg3kcnAAck7MZVghYCa9m9xiIPavWhbQFRyaz70jnQVyx2jXZxXTWV9widbp6AZDsWe5WHBc9Yn7g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/borrow/theMostBorrowedBook/?startDate=2022-06-01&endDate=2022-10-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"borrow",
+						"theMostBorrowedBook",
+						""
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-06-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-10-30"
 						}
 					]
 				}

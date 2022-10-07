@@ -1,11 +1,13 @@
 package elcom.ex1.librarybooks.message.rabbitmq.worker;
 
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
+@EnableRabbit
 public class WorkerConfig {
 
     @Bean("worker_queue")

@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "borrowed_list ")
-public class Borrow implements Serializable {
+public class    Borrow implements Serializable {
     private static final long serialVersionUid = 1L;
 
     @Id

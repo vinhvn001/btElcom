@@ -1,18 +1,26 @@
 package elcom.ex1.librarybooks.service.impl;
 
+import elcom.ex1.librarybooks.entity.elastic.BookEs;
 import elcom.ex1.librarybooks.entity.library.Author;
 import elcom.ex1.librarybooks.entity.library.Book;
 import elcom.ex1.librarybooks.entity.library.Category;
 import elcom.ex1.librarybooks.repository.library.BookRepository;
+import elcom.ex1.librarybooks.service.BookEsService;
 import elcom.ex1.librarybooks.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.validation.ValidationException;
+import java.util.List;
 
 @Service
 public class BookServiceImpl implements BookService {
 
     @Autowired
     BookRepository bookRepository;
+
+    @Autowired
+    private BookEsService bookEsService;
 
     @Override
     public Book findById(Long id) {
@@ -21,29 +29,33 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book create(Book book) {
-        if(book.getId() == null || book.getBookName() == null || book.getBookAmount() == null )
-            return null;
+        BookEs bookEs = new BookEs(book.getId(), book.getBookName());
+        bookEsService.save(bookEs);
         return bookRepository.save(book);
     }
 
     @Override
-    public Book update(Long id, Book book) {
-        Book fromDB = bookRepository.findById(id).orElse(null);
+    public Book update( Book book) {
+        Book fromDB = bookRepository.findById(book.getId()).orElse(null);
         if(fromDB == null)
             return null;
         else{
-            fromDB.setId(book.getId());
             fromDB.setCategoryId(book.getCategoryId());
             fromDB.setBookAmount(book.getBookAmount());
+            fromDB.setFirstLetter(book.getFirstLetter());
             fromDB.setBookName(book.getBookName());
             fromDB.setAuthorId(book.getAuthorId());
+
+            bookEsService.update( book.getId(),book.getBookName());
             return bookRepository.save(fromDB);
         }
     }
 
     @Override
     public void delete(Long id) {
-         bookRepository.deleteById(id);
+
+        bookEsService.delete(id);
+        bookRepository.deleteById(id);
     }
 
     @Override
@@ -52,13 +64,13 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Integer findBookAmountByAuthorId(Author id) {
+    public List<Object[]> findBookAmountByAuthorId(Author id) {
 
         return bookRepository.findBookAmountByAuthorId(id);
     }
 
     @Override
-    public Integer findBookAmountByFirstLetter(String firstLetter) {
+    public List<Object[]> findBookAmountByFirstLetter(String firstLetter) {
         return bookRepository.findBookAmountByFirstLetter(firstLetter);
     }
 
@@ -66,6 +78,13 @@ public class BookServiceImpl implements BookService {
     public Integer findBookAmountByCategoryId(Category id) {
         return bookRepository.findBookAmountByCategoryId(id);
     }
+
+    @Override
+    public List<Object[]> findBookList() {
+        return bookRepository.findBookList();
+    }
+
+
 
 
 }

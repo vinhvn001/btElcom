@@ -5,23 +5,27 @@ import elcom.ex1.librarybooks.entity.library.Author;
 import elcom.ex1.librarybooks.entity.library.Book;
 import elcom.ex1.librarybooks.entity.library.Category;
 
+import java.util.List;
+
 
 public interface BookService {
 
     Book findById(Long id);
 
-    Book create(Book book );
+    Book create(Book book);
 
-    Book update(Long id, Book book);
+    Book update( Book book);
 
     void delete(Long id);
 
     Iterable<Book> findAll();
 
 
-    Integer findBookAmountByAuthorId(Author id);
+    List<Object[]> findBookAmountByAuthorId(Author id);
 
-    Integer findBookAmountByFirstLetter(String firstLetter);
+    List<Object[]> findBookAmountByFirstLetter(String firstLetter);
 
     Integer findBookAmountByCategoryId(Category id);
+
+    List<Object[]> findBookList();
 }

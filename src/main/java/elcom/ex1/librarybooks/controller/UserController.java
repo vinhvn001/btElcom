@@ -53,7 +53,7 @@ public class UserController {
         User user = userService.findById(id);
 
         if ( user == null)
-            return new ResponseEntity<>(user, HttpStatus.NO_CONTENT);
+            throw new ValidationException("id không hợp lệ");
 
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
@@ -64,7 +64,6 @@ public class UserController {
         LOGGER.info("{}", JSONConverter.toJSON(user));
 
         new UserValidation().validateUpsertUser(user, "INSERT");
-
         user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
         userService.save(user);
 
