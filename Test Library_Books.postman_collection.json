@@ -806,7 +806,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzMjkzNTgzLCJleHAiOjE2NjMzNTQwNjN9.czfbZusxcPqUaarv6v5Xg3d8DkB12LxKs_crunJINkGJIdN-LZFKsGuYZByeNt7w0yzZmbQeUOx4w5wOl9VCdw",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1OTk0MTQ2LCJleHAiOjE2NjYwNTQ2MjZ9.zvmd6FUwZ1hWt8drVht-A8LgOxay8EGxI4Hvj-VVukaJWlMveEGeYHgAKy8yN2Ah-msJIsPfzMSW1_hBwOx_GQ",
 							"type": "string"
 						}
 					]
@@ -1152,7 +1152,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjYzNjY3NzQ2LCJleHAiOjE2NjM3MjgyMjZ9.PWgM9hxuWbi1nW_l2XaXlBjHAwYj6zSNWZxrsjuhH7QcWUvRk__flUYrpHtc0DTvvtwKeVTp2UQP-ZwpuoC_xQ",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1OTk0MTQ2LCJleHAiOjE2NjYwNTQ2MjZ9.zvmd6FUwZ1hWt8drVht-A8LgOxay8EGxI4Hvj-VVukaJWlMveEGeYHgAKy8yN2Ah-msJIsPfzMSW1_hBwOx_GQ",
 							"type": "string"
 						}
 					]
@@ -1274,7 +1274,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY0MzUyODE0LCJleHAiOjE2NjQ0MTMyOTR9.3i6w5P1cja_U8nY9Q1s6v5HWCM8XE2TJCCBwSAvgo-C-4rUdmNemv0jiZDfLuQiemUJDFEt_Va-fwqHR0ato1A",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1OTgxMDQyLCJleHAiOjE2NjYwNDE1MjJ9.MIBH9YyJpTQWWQF3ltnUOvDfREZRy900N-tLZCaoQskdWrB5B7YOhTP530l9GyP5mUtql5Y9oQgFdyjyB33lTQ",
 							"type": "string"
 						}
 					]
@@ -1283,7 +1283,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"settings\" : {\r\n        \"index\" : {\r\n            \"number_of_shards\" : 2, \r\n            \"number_of_replicas\" : 1 \r\n        }\r\n    }\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1291,7 +1291,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/bookEs/5",
+					"raw": "http://localhost:8080/bookEs/27",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1299,7 +1299,7 @@
 					"port": "8080",
 					"path": [
 						"bookEs",
-						"5"
+						"27"
 					]
 				}
 			},
@@ -1307,11 +1307,33 @@
 		},
 		{
 			"name": "Book Esearch by book name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1OTgxODM3LCJleHAiOjE2NjYwNDIzMTd9.TUqZGY7gFaZr3L2EVMkYjWmZ1SOEM2SdPLvMKhHVOerSUdwQ6t9IL8YwvLRH9TQrVActGS1SnAud4gXzJM9GGw",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"the chat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/bookEs/findByName?bookName= \"Tieng viet 5\"",
+					"raw": "http://localhost:8080/bookEs/findByName",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1323,8 +1345,9 @@
 					],
 					"query": [
 						{
-							"key": "bookName",
-							"value": " \"Tieng viet 5\""
+							"key": "name",
+							"value": "",
+							"disabled": true
 						}
 					]
 				}
@@ -1339,7 +1362,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1MTE4MDk5LCJleHAiOjE2NjUxNzg1Nzl9.6ZsoqiUcjg6NFlKt7v2Vp9x2M3m8Wu8RslhLtInPiyuLof9ueb-5U-H0-ZHy1Wpw7XjASQBdokH9iKOOxsU3XA",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY1OTkzNjE2LCJleHAiOjE2NjYwNTQwOTZ9.zVZBE-MrVdAG5mij_FcaQwe9-DdZ34CuIOkSNWwxqVXNOi8F8mcmG-oliX4LpU3rPvqPu3ryzRB6DL_zUmkyCQ",
 							"type": "string"
 						}
 					]
