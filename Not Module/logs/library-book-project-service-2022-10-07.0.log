@@ -1,0 +1,981 @@
+07-10-2022 08:39:52.391 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 6860 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 08:39:52.396 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 08:39:52.450 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 08:39:52.562 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 08:39:52.563 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 08:39:54.481 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:39:54.483 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 08:39:55.324 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 818 ms. Found 5 JPA repository interfaces.
+07-10-2022 08:39:55.326 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:39:55.327 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 08:39:55.341 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+07-10-2022 08:39:55.376 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:39:55.378 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 08:39:55.391 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 12 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 08:39:56.669 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:39:56.672 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 08:39:56.725 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:39:56.727 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:39:56.728 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:39:56.729 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:39:56.731 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:39:56.738 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:39:56.740 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 66 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 08:39:56.795 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:39:56.798 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 08:39:56.843 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.845 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.846 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.847 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.848 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.852 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.854 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:39:56.855 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+07-10-2022 08:39:59.081 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-10-2022 08:39:59.111 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-10-2022 08:39:59.113 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-10-2022 08:39:59.114 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+07-10-2022 08:39:59.485 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-10-2022 08:39:59.486 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 6920 ms
+07-10-2022 08:40:01.247 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 08:40:01.457 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+07-10-2022 08:40:01.914 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07-10-2022 08:40:02.609 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 08:40:03.882 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 08:40:03.894 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:40:03.973 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 08:40:04.518 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 08:40:04.589 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 08:40:04.590 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:40:07.129 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-10-2022 08:40:07.440 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController' defined in file [D:\Elcom\Library_Books\target\classes\elcom\ex1\librarybooks\controller\BookController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookEsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in elcom.ex1.librarybooks.repository.elastic.BookEsRepository defined in @EnableElasticsearchRepositories declared on LibraryBooksApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+07-10-2022 08:40:07.445 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:40:07.446 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:40:07.598 INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+07-10-2022 08:40:07.614 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+07-10-2022 08:40:07.645 ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController' defined in file [D:\Elcom\Library_Books\target\classes\elcom\ex1\librarybooks\controller\BookController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookEsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in elcom.ex1.librarybooks.repository.elastic.BookEsRepository defined in @EnableElasticsearchRepositories declared on LibraryBooksApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at elcom.ex1.librarybooks.LibraryBooksApplication.main(LibraryBooksApplication.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookEsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in elcom.ex1.librarybooks.repository.elastic.BookEsRepository defined in @EnableElasticsearchRepositories declared on LibraryBooksApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in elcom.ex1.librarybooks.repository.elastic.BookEsRepository defined in @EnableElasticsearchRepositories declared on LibraryBooksApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in elcom.ex1.librarybooks.repository.elastic.BookEsRepository defined in @EnableElasticsearchRepositories declared on LibraryBooksApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$instantiateClass$5(RepositoryFactorySupport.java:577)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.instantiateClass(RepositoryFactorySupport.java:577)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:542)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:74)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 63 common frames omitted
+Caused by: org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.data.elasticsearch.core.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:72)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.translateException(ElasticsearchRestTemplate.java:427)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:410)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.doExists(RestIndexTemplate.java:103)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:134)
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:92)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 76 common frames omitted
+Caused by: org.elasticsearch.ElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2078)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1732)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1717)
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:963)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.lambda$doExists$2(RestIndexTemplate.java:103)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:408)
+	... 84 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:262)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:249)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:76)
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2075)
+	... 89 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+07-10-2022 08:40:48.708 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 3536 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 08:40:48.710 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 08:40:48.723 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 08:40:48.868 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 08:40:48.868 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 08:40:50.692 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:40:50.692 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 08:40:51.098 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 388 ms. Found 5 JPA repository interfaces.
+07-10-2022 08:40:51.100 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:40:51.100 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 08:40:51.108 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+07-10-2022 08:40:51.123 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:40:51.124 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 08:40:51.134 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 08:40:51.807 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:40:51.809 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 08:40:51.875 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:40:51.876 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:40:51.878 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:40:51.880 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:40:51.882 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:40:51.885 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:40:51.886 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 76 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 08:40:51.997 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:40:52.000 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 08:40:52.114 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.119 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.122 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.128 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.139 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.145 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.148 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:40:52.149 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 70 ms. Found 0 Redis repository interfaces.
+07-10-2022 08:40:54.241 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-10-2022 08:40:54.263 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-10-2022 08:40:54.264 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-10-2022 08:40:54.264 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+07-10-2022 08:40:54.503 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-10-2022 08:40:54.503 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5633 ms
+07-10-2022 08:40:57.810 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 08:40:58.234 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+07-10-2022 08:40:59.754 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07-10-2022 08:41:00.733 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 08:41:01.971 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 08:41:01.994 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:41:02.082 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 08:41:02.624 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 08:41:02.743 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 08:41:02.744 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:41:05.387 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-10-2022 08:41:06.913 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@460a556, org.springframework.security.web.context.SecurityContextPersistenceFilter@352d9d91, org.springframework.security.web.header.HeaderWriterFilter@3b2e4627, org.springframework.web.filter.CorsFilter@2d8b3077, org.springframework.security.web.authentication.logout.LogoutFilter@3fd1fe7a, elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter@6e469eef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@275b1b45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e3ef709, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61d49474, org.springframework.security.web.session.SessionManagementFilter@3f96bec9, org.springframework.security.web.access.ExceptionTranslationFilter@4f1b8cac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4dc4febe]
+07-10-2022 08:41:08.106 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+07-10-2022 08:41:08.139 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+07-10-2022 08:41:08.139 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+07-10-2022 08:41:08.141 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+07-10-2022 08:41:08.144 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+07-10-2022 08:41:08.145 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+07-10-2022 08:41:08.145 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+07-10-2022 08:41:08.146 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@177f455d
+07-10-2022 08:41:08.323 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+07-10-2022 08:41:08.354 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+07-10-2022 08:41:08.358 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+07-10-2022 08:41:08.588 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#48f7260d:0/SimpleConnection@6e98046d [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 50895]
+07-10-2022 08:41:08.600 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-8weKGS1WSG2WzbOGH13apA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:41:08.602 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-XGYOoJCtRrKczkKDuJiv2Q) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:41:08.603 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-9fg07yRkTWiLl2Xfxgs_8Q) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:41:08.604 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-Nq30OO2kSvCmzhT6WikpFg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:41:08.848 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+07-10-2022 08:41:08.849 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+07-10-2022 08:41:08.877 INFO  e.e.l.LibraryBooksApplication.logStarted - Started LibraryBooksApplication in 21.689 seconds (JVM running for 23.299)
+07-10-2022 08:41:58.319 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-10-2022 08:41:58.319 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-10-2022 08:41:58.321 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+07-10-2022 08:41:59.235 WARN  o.a.c.util.SessionIdGeneratorBase.log - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [197] milliseconds.
+07-10-2022 08:42:16.818 WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 0, SQLState: 42P01
+07-10-2022 08:42:16.818 ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - ERROR: relation "school" does not exist
+  Position: 115
+07-10-2022 08:42:16.839 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
+org.postgresql.util.PSQLException: ERROR: relation "school" does not exist
+  Position: 115
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2674)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2364)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:354)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:484)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:404)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:162)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:114)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2322)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2075)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1468)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:399)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy148.findAll(Unknown Source)
+	at elcom.ex1.librarybooks.service.impl.SchoolClassServiceImpl.findAll(SchoolClassServiceImpl.java:61)
+	at elcom.ex1.librarybooks.controller.SchoolClassController.findAll(SchoolClassController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+07-10-2022 08:42:47.593 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:48.487 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:48.502 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:49.487 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:49.492 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:49.534 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:49.539 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:50.546 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:50.548 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:51.557 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:51.559 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:52.565 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:52.567 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:53.573 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:53.575 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:54.587 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:54.588 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:42:54.696 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:42:54.697 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 08:42:54.912 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+07-10-2022 08:42:54.912 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+07-10-2022 08:42:54.912 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 08:42:54.913 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+07-10-2022 08:42:54.939 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:42:54.940 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:43:01.550 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 884 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 08:43:01.552 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 08:43:01.555 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 08:43:01.630 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 08:43:01.630 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 08:43:02.576 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:43:02.577 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 08:43:02.811 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 221 ms. Found 5 JPA repository interfaces.
+07-10-2022 08:43:02.812 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:43:02.812 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 08:43:02.819 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+07-10-2022 08:43:02.828 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:43:02.828 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 08:43:02.834 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 08:43:03.157 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:43:03.159 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 08:43:03.179 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:43:03.180 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:43:03.181 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:43:03.181 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:43:03.182 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:43:03.183 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 08:43:03.184 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 24 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 08:43:03.211 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 08:43:03.213 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 08:43:03.230 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.231 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.232 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.232 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.233 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.233 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.234 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 08:43:03.234 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+07-10-2022 08:43:04.481 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-10-2022 08:43:04.499 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-10-2022 08:43:04.500 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-10-2022 08:43:04.500 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+07-10-2022 08:43:04.644 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-10-2022 08:43:04.645 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3014 ms
+07-10-2022 08:43:05.263 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 08:43:05.340 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+07-10-2022 08:43:05.554 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07-10-2022 08:43:05.980 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 08:43:06.687 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 08:43:06.696 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:43:06.760 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 08:43:07.005 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 08:43:07.058 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 08:43:07.059 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:43:08.423 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-10-2022 08:43:09.146 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4064df9, org.springframework.security.web.context.SecurityContextPersistenceFilter@862d28, org.springframework.security.web.header.HeaderWriterFilter@5131b258, org.springframework.web.filter.CorsFilter@7f246a9e, org.springframework.security.web.authentication.logout.LogoutFilter@7968d361, elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter@6bd71cef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@640916be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e8b9c39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3df0923c, org.springframework.security.web.session.SessionManagementFilter@6449958e, org.springframework.security.web.access.ExceptionTranslationFilter@2d34f584, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18b79c02]
+07-10-2022 08:43:09.843 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+07-10-2022 08:43:09.864 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+07-10-2022 08:43:09.865 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+07-10-2022 08:43:09.866 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+07-10-2022 08:43:09.867 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+07-10-2022 08:43:09.868 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+07-10-2022 08:43:09.868 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+07-10-2022 08:43:09.868 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3bdd89b3
+07-10-2022 08:43:09.975 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+07-10-2022 08:43:09.989 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+07-10-2022 08:43:09.991 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+07-10-2022 08:43:10.080 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#5da81304:0/SimpleConnection@3c9e18f1 [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 56201]
+07-10-2022 08:43:10.089 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-Bl6u3z_4QE2jlROF2rOXpQ) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:43:10.089 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-OufeOfdgRtCAvyjRrYX8yQ) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:43:10.090 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-wQHvW1B-S4WBKDUTOiqUJw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:43:10.090 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-MmQLjQxUR4GXyWiAzeodEw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 08:43:10.327 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+07-10-2022 08:43:10.328 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+07-10-2022 08:43:10.362 INFO  e.e.l.LibraryBooksApplication.logStarted - Started LibraryBooksApplication in 9.588 seconds (JVM running for 10.66)
+07-10-2022 08:43:13.716 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-10-2022 08:43:13.717 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-10-2022 08:43:13.719 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 2 ms
+07-10-2022 08:43:19.663 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:20.277 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:20.281 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:21.282 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:21.287 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:21.322 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:21.327 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:21.412 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:21.414 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:22.381 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:22.382 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:22.397 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:22.399 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:23.398 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:23.400 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:24.402 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:24.404 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 08:43:25.417 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 08:43:25.417 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 08:43:25.615 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+07-10-2022 08:43:25.615 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+07-10-2022 08:43:25.615 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 08:43:25.616 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+07-10-2022 08:43:25.643 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 08:43:25.645 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:45:00.465 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 12416 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 11:45:00.467 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 11:45:00.478 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 11:45:00.627 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 11:45:00.628 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 11:45:01.772 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:45:01.773 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 11:45:02.195 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 409 ms. Found 5 JPA repository interfaces.
+07-10-2022 11:45:02.195 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:45:02.196 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 11:45:02.202 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+07-10-2022 11:45:02.209 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:45:02.210 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 11:45:02.215 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 11:45:02.575 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:45:02.576 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 11:45:02.598 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:45:02.599 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:45:02.600 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:45:02.601 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:45:02.603 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:45:02.604 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:45:02.604 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 27 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 11:45:02.632 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:45:02.635 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 11:45:02.654 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.655 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.656 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.656 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.656 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.657 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.657 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:45:02.658 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+07-10-2022 11:45:03.260 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memcachedConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'memcached.ip' in value "${memcached.ip}"
+07-10-2022 11:45:03.270 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+07-10-2022 11:45:03.302 ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memcachedConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'memcached.ip' in value "${memcached.ip}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at elcom.ex1.librarybooks.LibraryBooksApplication.main(LibraryBooksApplication.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memcachedConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'memcached.ip' in value "${memcached.ip}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:719)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memcachedConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'memcached.ip' in value "${memcached.ip}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1451)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:759)
+	... 46 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'memcached.ip' in value "${memcached.ip}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 60 common frames omitted
+07-10-2022 11:46:48.507 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 11780 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 11:46:48.509 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 11:46:48.513 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 11:46:48.591 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 11:46:48.592 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 11:46:49.477 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:46:49.478 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 11:46:49.678 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 189 ms. Found 5 JPA repository interfaces.
+07-10-2022 11:46:49.678 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:46:49.679 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 11:46:49.686 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+07-10-2022 11:46:49.694 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:46:49.695 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 11:46:49.701 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 11:46:50.032 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:46:50.033 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 11:46:50.051 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:46:50.052 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:46:50.052 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:46:50.053 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:46:50.053 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:46:50.054 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:46:50.054 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 21 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 11:46:50.072 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:46:50.075 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 11:46:50.094 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.094 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.095 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.095 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.096 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.096 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.097 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:46:50.097 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+07-10-2022 11:46:50.633 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [elcom.ex1.librarybooks.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$d043736d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-10-2022 11:46:51.329 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-10-2022 11:46:51.344 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:46:51.344 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-10-2022 11:46:51.344 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+07-10-2022 11:46:51.495 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-10-2022 11:46:51.496 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2903 ms
+07-10-2022 11:46:52.266 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 11:46:52.368 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+07-10-2022 11:46:52.611 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07-10-2022 11:46:53.075 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 11:46:53.840 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 11:46:53.849 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:46:53.916 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 11:46:54.325 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 11:46:54.386 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 11:46:54.387 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:46:55.805 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-10-2022 11:46:57.000 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f4f7665, org.springframework.security.web.context.SecurityContextPersistenceFilter@164443e7, org.springframework.security.web.header.HeaderWriterFilter@78734994, org.springframework.web.filter.CorsFilter@57752a18, org.springframework.security.web.authentication.logout.LogoutFilter@3d08af65, elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter@27293d2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ed2ffe9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@320c84b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7da106ee, org.springframework.security.web.session.SessionManagementFilter@692a676d, org.springframework.security.web.access.ExceptionTranslationFilter@760ee52c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fa3223a]
+07-10-2022 11:46:57.692 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+07-10-2022 11:46:57.715 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+07-10-2022 11:46:57.715 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+07-10-2022 11:46:57.717 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+07-10-2022 11:46:57.718 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+07-10-2022 11:46:57.719 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+07-10-2022 11:46:57.719 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+07-10-2022 11:46:57.719 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@64cd39b8
+07-10-2022 11:46:57.833 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:46:57.835 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+07-10-2022 11:46:57.836 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+07-10-2022 11:46:57.836 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+07-10-2022 11:46:57.837 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 11:46:57.837 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+07-10-2022 11:46:57.860 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:46:57.860 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:46:57.986 INFO  o.a.coyote.http11.Http11NioProtocol.log - Pausing ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:46:57.987 INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+07-10-2022 11:46:57.992 INFO  o.a.coyote.http11.Http11NioProtocol.log - Stopping ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:46:57.994 INFO  o.a.coyote.http11.Http11NioProtocol.log - Destroying ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:46:58.003 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+07-10-2022 11:46:58.029 ERROR o.s.b.d.LoggingFailureAnalysisReporter.report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+07-10-2022 11:47:20.786 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 8464 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 11:47:20.788 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 11:47:20.791 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 11:47:20.861 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 11:47:20.861 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 11:47:21.779 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:47:21.780 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 11:47:21.976 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 185 ms. Found 5 JPA repository interfaces.
+07-10-2022 11:47:21.977 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:47:21.977 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 11:47:21.983 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+07-10-2022 11:47:21.992 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:47:21.993 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 11:47:22.003 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 11:47:22.357 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:47:22.358 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 11:47:22.377 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:47:22.377 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:47:22.378 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:47:22.379 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:47:22.379 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:47:22.380 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 11:47:22.381 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 21 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 11:47:22.406 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 11:47:22.408 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 11:47:22.427 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.428 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.428 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.429 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.430 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.431 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.432 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 11:47:22.433 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+07-10-2022 11:47:22.947 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [elcom.ex1.librarybooks.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$fe1b487f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-10-2022 11:47:23.563 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-10-2022 11:47:23.579 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:47:23.580 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-10-2022 11:47:23.580 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+07-10-2022 11:47:23.736 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-10-2022 11:47:23.737 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2875 ms
+07-10-2022 11:47:24.350 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 11:47:24.416 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+07-10-2022 11:47:24.609 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07-10-2022 11:47:25.045 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 11:47:25.719 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 11:47:25.729 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:47:25.791 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 11:47:26.058 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 11:47:26.117 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 11:47:26.118 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 11:47:27.386 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-10-2022 11:47:28.163 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69dc2488, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f749731, org.springframework.security.web.header.HeaderWriterFilter@260276d0, org.springframework.web.filter.CorsFilter@7b677c69, org.springframework.security.web.authentication.logout.LogoutFilter@482bdd56, elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter@36a12c6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6692c215, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f3a434b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40b1df8a, org.springframework.security.web.session.SessionManagementFilter@6913fadd, org.springframework.security.web.access.ExceptionTranslationFilter@3ad42139, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3eeb22b]
+07-10-2022 11:47:28.919 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+07-10-2022 11:47:28.946 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+07-10-2022 11:47:28.947 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+07-10-2022 11:47:28.949 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+07-10-2022 11:47:28.950 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+07-10-2022 11:47:28.951 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+07-10-2022 11:47:28.951 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+07-10-2022 11:47:28.951 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@62e070e
+07-10-2022 11:47:29.099 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+07-10-2022 11:47:29.112 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+07-10-2022 11:47:29.115 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+07-10-2022 11:47:29.304 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#ae06b6b:0/SimpleConnection@734ded9c [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 51219]
+07-10-2022 11:47:29.313 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-cdFEmoJAS6641KazhWf83A) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 11:47:29.313 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-2PUauV1iREK6AwT8mu0u6w) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 11:47:29.314 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-ZdRWNgNXTzeqkrqTiVU3aw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 11:47:29.314 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-ThQrNBZbTyuIOsAQCaQcfg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 11:47:29.514 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+07-10-2022 11:47:29.515 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+07-10-2022 11:47:29.543 INFO  e.e.l.LibraryBooksApplication.logStarted - Started LibraryBooksApplication in 9.427 seconds (JVM running for 10.422)
+07-10-2022 11:48:14.618 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-10-2022 11:48:14.618 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-10-2022 11:48:14.620 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+07-10-2022 11:48:14.886 WARN  o.a.c.util.SessionIdGeneratorBase.log - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [187] milliseconds.
+07-10-2022 12:21:01.741 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:02.032 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:02.046 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:03.029 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:03.060 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:04.038 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:04.053 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:04.099 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:04.101 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:04.926 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:04.928 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:05.062 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:05.064 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:06.077 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:06.078 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:07.091 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:07.093 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:21:07.107 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:21:07.108 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 12:21:07.285 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+07-10-2022 12:21:07.286 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+07-10-2022 12:21:07.286 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 12:21:07.286 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+07-10-2022 12:21:07.324 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 12:21:07.325 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 12:21:15.520 INFO  e.e.l.LibraryBooksApplication.logStarting - Starting LibraryBooksApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 17152 (D:\Elcom\Library_Books\target\classes started by vinhv in D:\Elcom\Library_Books)
+07-10-2022 12:21:15.521 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+07-10-2022 12:21:15.522 INFO  e.e.l.LibraryBooksApplication.logStartupProfileInfo - The following profiles are active: common,dev
+07-10-2022 12:21:15.609 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07-10-2022 12:21:15.610 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07-10-2022 12:21:16.776 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 12:21:16.776 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 12:21:16.991 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 203 ms. Found 5 JPA repository interfaces.
+07-10-2022 12:21:16.992 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 12:21:16.992 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07-10-2022 12:21:17.001 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+07-10-2022 12:21:17.011 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 12:21:17.012 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+07-10-2022 12:21:17.019 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 1 Elasticsearch repository interfaces.
+07-10-2022 12:21:17.356 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 12:21:17.357 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+07-10-2022 12:21:17.378 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 12:21:17.379 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 12:21:17.380 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 12:21:17.381 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 12:21:17.382 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 12:21:17.383 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+07-10-2022 12:21:17.383 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 25 ms. Found 0 Reactive Elasticsearch repository interfaces.
+07-10-2022 12:21:17.405 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+07-10-2022 12:21:17.407 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+07-10-2022 12:21:17.423 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.elastic.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.424 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.AuthorRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.425 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BookRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.427 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.BorrowRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.427 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.CategoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.428 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.library.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.430 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface elcom.ex1.librarybooks.repository.log.SchoolClassRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+07-10-2022 12:21:17.430 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+07-10-2022 12:21:18.054 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [elcom.ex1.librarybooks.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$628788d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-10-2022 12:21:18.731 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+07-10-2022 12:21:18.746 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+07-10-2022 12:21:18.747 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+07-10-2022 12:21:18.747 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+07-10-2022 12:21:18.900 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+07-10-2022 12:21:18.900 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3290 ms
+07-10-2022 12:21:19.552 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 12:21:19.656 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+07-10-2022 12:21:19.959 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07-10-2022 12:21:20.413 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 12:21:21.283 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 12:21:21.291 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 12:21:21.361 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+07-10-2022 12:21:21.710 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+07-10-2022 12:21:21.777 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07-10-2022 12:21:21.777 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 12:21:23.265 INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+07-10-2022 12:21:24.227 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7989f503, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f8001ef, org.springframework.security.web.header.HeaderWriterFilter@55b7c8e1, org.springframework.web.filter.CorsFilter@39969950, org.springframework.security.web.authentication.logout.LogoutFilter@267811d7, elcom.ex1.librarybooks.auth.jwt.JwtAuthenticationFilter@52d7b25b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e5b2250, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@823fd81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ba148b, org.springframework.security.web.session.SessionManagementFilter@f136361, org.springframework.security.web.access.ExceptionTranslationFilter@6578f1fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47329a1d]
+07-10-2022 12:21:24.984 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+07-10-2022 12:21:25.001 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+07-10-2022 12:21:25.001 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+07-10-2022 12:21:25.002 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+07-10-2022 12:21:25.003 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+07-10-2022 12:21:25.003 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+07-10-2022 12:21:25.003 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+07-10-2022 12:21:25.004 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@76407128
+07-10-2022 12:21:25.113 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+07-10-2022 12:21:25.126 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+07-10-2022 12:21:25.128 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+07-10-2022 12:21:25.215 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#52054bb3:0/SimpleConnection@7be3f664 [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 51708]
+07-10-2022 12:21:25.223 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-6NPoq9bTSF6OJ6VU5zJU1A) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 12:21:25.224 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-ml2obNiySgGCbLOnsg62Kg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 12:21:25.224 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-6uhOtdQXTvmpZRIQAF_DAA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 12:21:25.224 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-zvtGNtmqRHS3UoaOnyiCWg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+07-10-2022 12:21:25.402 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+07-10-2022 12:21:25.403 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+07-10-2022 12:21:25.422 INFO  e.e.l.LibraryBooksApplication.logStarted - Started LibraryBooksApplication in 10.895 seconds (JVM running for 12.905)
+07-10-2022 12:21:29.055 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-10-2022 12:21:29.055 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+07-10-2022 12:21:29.068 INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 13 ms
+07-10-2022 12:21:29.605 WARN  o.a.c.util.SessionIdGeneratorBase.log - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [255] milliseconds.
+07-10-2022 12:23:11.308 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:12.167 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:12.171 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:13.004 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:13.023 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:13.188 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:13.198 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:14.005 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:14.007 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:14.182 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:14.185 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:15.049 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:15.050 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:15.192 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:15.193 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:16.050 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:16.053 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+07-10-2022 12:23:16.195 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+07-10-2022 12:23:16.195 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 12:23:16.489 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+07-10-2022 12:23:16.490 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+07-10-2022 12:23:16.490 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+07-10-2022 12:23:16.491 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+07-10-2022 12:23:16.548 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+07-10-2022 12:23:16.555 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
