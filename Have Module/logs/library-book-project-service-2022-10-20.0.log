@@ -1,0 +1,517 @@
+20-10-2022 14:56:10.730 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+20-10-2022 14:56:10.738 INFO  com.elcom.backend.ServiceApplication.logStarting - Starting ServiceApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 8548 (D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes started by vinhv in D:\Elcom\testing\btElcom\Have Module)
+20-10-2022 14:56:10.740 INFO  com.elcom.backend.ServiceApplication.logStartupProfileInfo - The following profiles are active: common,dev
+20-10-2022 14:56:11.858 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 14:56:11.860 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 14:56:12.132 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 256 ms. Found 5 JPA repository interfaces.
+20-10-2022 14:56:12.133 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 14:56:12.134 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 14:56:12.140 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+20-10-2022 14:56:12.149 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 14:56:12.149 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+20-10-2022 14:56:12.155 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 Elasticsearch repository interfaces.
+20-10-2022 14:56:12.572 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 14:56:12.574 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+20-10-2022 14:56:12.598 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 24 ms. Found 0 Reactive Elasticsearch repository interfaces.
+20-10-2022 14:56:12.624 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 14:56:12.626 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20-10-2022 14:56:12.642 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.elcom.elastic.repository.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+20-10-2022 14:56:12.647 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+20-10-2022 14:56:13.207 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [com.elcom.backend.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$2104ec89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-10-2022 14:56:13.987 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+20-10-2022 14:56:14.003 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+20-10-2022 14:56:14.004 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+20-10-2022 14:56:14.004 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+20-10-2022 14:56:14.282 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+20-10-2022 14:56:14.282 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3467 ms
+20-10-2022 14:56:15.206 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 14:56:15.301 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+20-10-2022 14:56:15.574 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+20-10-2022 14:56:16.130 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 14:56:16.981 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 14:56:16.992 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 14:56:17.063 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 14:56:17.378 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 14:56:17.441 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 14:56:17.442 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 14:56:19.940 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d012e18, org.springframework.security.web.context.SecurityContextPersistenceFilter@498d7c57, org.springframework.security.web.header.HeaderWriterFilter@4a57ad67, org.springframework.web.filter.CorsFilter@7b13ae73, org.springframework.security.web.authentication.logout.LogoutFilter@62857555, com.elcom.backend.auth.jwt.JwtAuthenticationFilter@77b01226, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66b9f727, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@117e9a56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dbfb843, org.springframework.security.web.session.SessionManagementFilter@1dfd39fe, org.springframework.security.web.access.ExceptionTranslationFilter@3020f22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36c763cd]
+20-10-2022 14:56:20.853 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+20-10-2022 14:56:20.878 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20-10-2022 14:56:20.878 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+20-10-2022 14:56:20.880 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+20-10-2022 14:56:20.881 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20-10-2022 14:56:20.881 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20-10-2022 14:56:20.881 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+20-10-2022 14:56:20.882 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@f64f47a
+20-10-2022 14:56:21.030 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+20-10-2022 14:56:21.048 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+20-10-2022 14:56:21.050 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+20-10-2022 14:56:21.198 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#5fc3dfc1:0/SimpleConnection@18ee9a8f [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 55708]
+20-10-2022 14:56:21.208 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-8dlC-H6HQIKjCXDepjFlLg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 14:56:21.209 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-_svMK_NbQ8ydECZYbWapKg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 14:56:21.209 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-huIEQ_qyQVi7vclgj3-NzA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 14:56:21.209 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-XtZoNfH8QVC3Ym7YJGxBCA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 14:56:21.539 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+20-10-2022 14:56:21.540 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20-10-2022 14:56:21.553 INFO  com.elcom.backend.ServiceApplication.logStarted - Started ServiceApplication in 11.875 seconds (JVM running for 12.827)
+20-10-2022 14:57:20.306 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:20.782 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:20.787 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:20.810 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:20.814 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:20.967 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:20.971 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:21.014 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:21.016 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:21.982 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:21.983 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:22.992 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:22.994 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:24.005 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:24.006 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:25.005 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:25.006 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 14:57:26.019 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 14:57:26.019 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 14:57:26.203 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+20-10-2022 14:57:26.203 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+20-10-2022 14:57:26.203 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 14:57:26.204 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+20-10-2022 14:57:26.226 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 14:57:26.227 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:06:46.589 INFO  com.elcom.backend.ServiceApplication.logStarting - Starting ServiceApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 11236 (D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes started by vinhv in D:\Elcom\testing\btElcom\Have Module)
+20-10-2022 16:06:46.586 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+20-10-2022 16:06:46.592 INFO  com.elcom.backend.ServiceApplication.logStartupProfileInfo - The following profiles are active: common,dev
+20-10-2022 16:06:47.796 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:06:47.797 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:06:48.073 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 262 ms. Found 5 JPA repository interfaces.
+20-10-2022 16:06:48.074 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:06:48.074 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:06:48.079 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+20-10-2022 16:06:48.086 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:06:48.087 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:06:48.091 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 Elasticsearch repository interfaces.
+20-10-2022 16:06:48.547 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:06:48.548 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:06:48.568 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 18 ms. Found 0 Reactive Elasticsearch repository interfaces.
+20-10-2022 16:06:48.598 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:06:48.600 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20-10-2022 16:06:48.622 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.elcom.elastic.repository.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+20-10-2022 16:06:48.626 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+20-10-2022 16:06:49.316 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [com.elcom.backend.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$ea024113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-10-2022 16:06:50.093 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+20-10-2022 16:06:50.114 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:06:50.115 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+20-10-2022 16:06:50.115 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+20-10-2022 16:06:50.424 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+20-10-2022 16:06:50.425 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3746 ms
+20-10-2022 16:06:51.288 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:06:51.424 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+20-10-2022 16:06:51.774 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+20-10-2022 16:06:52.336 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:06:53.233 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:06:53.245 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:06:53.310 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:06:53.755 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:06:53.849 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:06:53.849 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:06:55.926 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController' defined in file [D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes\com\elcom\backend\controller\BookController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookEsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in com.elcom.elastic.repository.BookEsRepository defined in @EnableElasticsearchRepositories declared on ElasticServiceApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+20-10-2022 16:06:55.932 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:06:55.933 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:06:56.068 INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+20-10-2022 16:06:56.079 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20-10-2022 16:06:56.104 ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController' defined in file [D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes\com\elcom\backend\controller\BookController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookEsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in com.elcom.elastic.repository.BookEsRepository defined in @EnableElasticsearchRepositories declared on ElasticServiceApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.elcom.backend.ServiceApplication.main(ServiceApplication.java:22)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookEsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in com.elcom.elastic.repository.BookEsRepository defined in @EnableElasticsearchRepositories declared on ElasticServiceApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookEsServiceImpl': Unsatisfied dependency expressed through field 'bookEsRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in com.elcom.elastic.repository.BookEsRepository defined in @EnableElasticsearchRepositories declared on ElasticServiceApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookEsRepository' defined in com.elcom.elastic.repository.BookEsRepository defined in @EnableElasticsearchRepositories declared on ElasticServiceApplication: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$instantiateClass$5(RepositoryFactorySupport.java:577)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.instantiateClass(RepositoryFactorySupport.java:577)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:542)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:74)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 58 common frames omitted
+Caused by: org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information]; nested: ExecutionException[java.net.ConnectException: Connection refused: no further information]; nested: ConnectException[Connection refused: no further information];
+	at org.springframework.data.elasticsearch.core.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:72)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.translateException(ElasticsearchRestTemplate.java:427)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:410)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.doExists(RestIndexTemplate.java:103)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:134)
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:92)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 71 common frames omitted
+Caused by: org.elasticsearch.ElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2078)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1732)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1717)
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:963)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.lambda$doExists$2(RestIndexTemplate.java:103)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:408)
+	... 79 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:262)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:249)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:76)
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2075)
+	... 84 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20-10-2022 16:09:35.991 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+20-10-2022 16:09:35.999 INFO  com.elcom.backend.ServiceApplication.logStarting - Starting ServiceApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 15472 (D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes started by vinhv in D:\Elcom\testing\btElcom\Have Module)
+20-10-2022 16:09:36.003 INFO  com.elcom.backend.ServiceApplication.logStartupProfileInfo - The following profiles are active: common,dev
+20-10-2022 16:09:37.440 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:09:37.440 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:09:37.768 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 315 ms. Found 5 JPA repository interfaces.
+20-10-2022 16:09:37.769 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:09:37.770 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:09:37.783 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+20-10-2022 16:09:37.799 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:09:37.800 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:09:37.811 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 11 ms. Found 1 Elasticsearch repository interfaces.
+20-10-2022 16:09:38.332 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:09:38.333 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:09:38.349 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 15 ms. Found 0 Reactive Elasticsearch repository interfaces.
+20-10-2022 16:09:38.371 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:09:38.374 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20-10-2022 16:09:38.400 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.elcom.elastic.repository.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+20-10-2022 16:09:38.406 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+20-10-2022 16:09:39.103 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [com.elcom.backend.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$5c311954] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-10-2022 16:09:39.788 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+20-10-2022 16:09:39.803 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:09:39.804 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+20-10-2022 16:09:39.805 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+20-10-2022 16:09:40.018 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+20-10-2022 16:09:40.018 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3882 ms
+20-10-2022 16:09:40.704 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:09:40.797 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+20-10-2022 16:09:41.050 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+20-10-2022 16:09:41.506 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:09:42.297 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:09:42.308 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:09:42.378 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:09:42.728 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:09:42.799 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:09:42.800 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:09:45.390 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7882379b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b93a232, org.springframework.security.web.header.HeaderWriterFilter@7475f57e, org.springframework.web.filter.CorsFilter@119cd026, org.springframework.security.web.authentication.logout.LogoutFilter@3ea95f79, com.elcom.backend.auth.jwt.JwtAuthenticationFilter@99774ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@187c8f96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@498d7c57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65448932, org.springframework.security.web.session.SessionManagementFilter@52b4da7c, org.springframework.security.web.access.ExceptionTranslationFilter@21b96db, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@453fcce2]
+20-10-2022 16:09:46.195 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+20-10-2022 16:09:46.221 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20-10-2022 16:09:46.222 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+20-10-2022 16:09:46.223 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+20-10-2022 16:09:46.225 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20-10-2022 16:09:46.225 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20-10-2022 16:09:46.225 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+20-10-2022 16:09:46.225 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@52364a6e
+20-10-2022 16:09:46.352 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:09:46.373 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+20-10-2022 16:09:46.376 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+20-10-2022 16:09:46.567 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#4ec28534:0/SimpleConnection@57cc7d9e [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 64716]
+20-10-2022 16:09:46.575 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-qzvA_MtcSku09_q-N0YetA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:09:46.575 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-ZMYZ4DztQNW40pDFb8dDhQ) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:09:46.576 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-bauzAp10Qpu6Bpu7Zib4Yw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:09:46.576 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-asa570PvQUeHcdVXTeiwXQ) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:09:48.230 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+20-10-2022 16:09:48.231 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20-10-2022 16:09:48.246 INFO  com.elcom.backend.ServiceApplication.logStarted - Started ServiceApplication in 13.691 seconds (JVM running for 15.037)
+20-10-2022 16:10:15.276 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:15.344 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:15.353 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:16.351 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:16.358 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:17.351 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:17.372 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:17.421 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:17.429 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:18.428 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:18.431 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:19.428 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:19.430 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:19.484 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:19.491 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:20.499 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:20.500 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:10:21.500 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:10:21.501 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 16:10:21.689 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+20-10-2022 16:10:21.690 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+20-10-2022 16:10:21.690 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 16:10:21.691 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+20-10-2022 16:10:21.723 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:10:21.725 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:10:28.190 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+20-10-2022 16:10:28.224 INFO  com.elcom.backend.ServiceApplication.logStarting - Starting ServiceApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 1132 (D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes started by vinhv in D:\Elcom\testing\btElcom\Have Module)
+20-10-2022 16:10:28.225 INFO  com.elcom.backend.ServiceApplication.logStartupProfileInfo - The following profiles are active: common,dev
+20-10-2022 16:10:30.870 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:10:30.871 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:10:31.185 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 297 ms. Found 5 JPA repository interfaces.
+20-10-2022 16:10:31.186 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:10:31.186 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:10:31.193 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+20-10-2022 16:10:31.202 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:10:31.202 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:10:31.207 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 Elasticsearch repository interfaces.
+20-10-2022 16:10:31.779 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:10:31.780 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:10:31.808 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 27 ms. Found 0 Reactive Elasticsearch repository interfaces.
+20-10-2022 16:10:31.860 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:10:31.872 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20-10-2022 16:10:31.908 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.elcom.elastic.repository.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+20-10-2022 16:10:31.916 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+20-10-2022 16:10:32.927 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [com.elcom.backend.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$5c311954] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-10-2022 16:10:34.060 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+20-10-2022 16:10:34.084 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:10:34.085 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+20-10-2022 16:10:34.086 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+20-10-2022 16:10:34.400 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+20-10-2022 16:10:34.400 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 6019 ms
+20-10-2022 16:10:35.298 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:10:35.429 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+20-10-2022 16:10:35.779 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+20-10-2022 16:10:36.418 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:10:37.509 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:10:37.677 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:10:37.760 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:10:38.456 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:10:38.546 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:10:38.546 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:10:41.979 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b13ae73, org.springframework.security.web.context.SecurityContextPersistenceFilter@12ff0e4f, org.springframework.security.web.header.HeaderWriterFilter@1f1b69bb, org.springframework.web.filter.CorsFilter@2dbfb843, org.springframework.security.web.authentication.logout.LogoutFilter@48149568, com.elcom.backend.auth.jwt.JwtAuthenticationFilter@386ea60f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f7e004d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21acc86a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ab2c5d8, org.springframework.security.web.session.SessionManagementFilter@610115e8, org.springframework.security.web.access.ExceptionTranslationFilter@6a40e660, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@97842a0]
+20-10-2022 16:10:42.905 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+20-10-2022 16:10:42.935 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20-10-2022 16:10:42.935 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+20-10-2022 16:10:42.936 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+20-10-2022 16:10:42.938 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20-10-2022 16:10:42.938 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20-10-2022 16:10:42.938 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+20-10-2022 16:10:42.939 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@548d9d87
+20-10-2022 16:10:43.052 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:10:43.078 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+20-10-2022 16:10:43.081 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+20-10-2022 16:10:43.232 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#79408109:0/SimpleConnection@61aaec51 [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 64806]
+20-10-2022 16:10:43.239 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-AVI24RqTTguhXFSW3_TWSA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:10:43.239 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-iJ3yYFQCR8OJe8H1vu58LQ) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:10:43.240 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-B-5_Xg1xT2OKHn3x1eoSRw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:10:43.240 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-y9u0tE_TTcmPSVFmSBVypA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:10:43.433 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+20-10-2022 16:10:43.434 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20-10-2022 16:10:43.456 INFO  com.elcom.backend.ServiceApplication.logStarted - Started ServiceApplication in 17.713 seconds (JVM running for 19.249)
+20-10-2022 16:13:42.720 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:42.924 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:42.931 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:43.780 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:43.801 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:43.802 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:43.813 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:44.789 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:44.791 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:45.929 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:45.967 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:46.827 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:46.829 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:47.815 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:47.816 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:47.831 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:47.833 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:13:48.838 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:13:48.839 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 16:13:49.087 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+20-10-2022 16:13:49.088 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+20-10-2022 16:13:49.088 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 16:13:49.089 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+20-10-2022 16:13:49.128 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:13:49.131 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:27:30.871 INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.2.0.Final
+20-10-2022 16:27:30.883 INFO  com.elcom.backend.ServiceApplication.logStarting - Starting ServiceApplication using Java 11.0.16 on DESKTOP-QNFCC5U with PID 14804 (D:\Elcom\testing\btElcom\Have Module\backend-service\target\classes started by vinhv in D:\Elcom\testing\btElcom\Have Module)
+20-10-2022 16:27:30.885 INFO  com.elcom.backend.ServiceApplication.logStartupProfileInfo - The following profiles are active: common,dev
+20-10-2022 16:27:32.171 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:27:32.172 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:27:32.462 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 270 ms. Found 5 JPA repository interfaces.
+20-10-2022 16:27:32.463 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:27:32.463 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-10-2022 16:27:32.469 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+20-10-2022 16:27:32.482 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:27:32.482 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:27:32.487 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 Elasticsearch repository interfaces.
+20-10-2022 16:27:32.941 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:27:32.942 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+20-10-2022 16:27:32.965 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 22 ms. Found 0 Reactive Elasticsearch repository interfaces.
+20-10-2022 16:27:32.996 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+20-10-2022 16:27:32.999 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20-10-2022 16:27:33.020 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.elcom.elastic.repository.BookEsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+20-10-2022 16:27:33.026 INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+20-10-2022 16:27:33.830 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'memcachedConfig' of type [com.elcom.backend.cache.MemcachedConfig$$EnhancerBySpringCGLIB$$4b16c841] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-10-2022 16:27:34.655 INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+20-10-2022 16:27:34.676 INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:27:34.677 INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+20-10-2022 16:27:34.678 INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.55]
+20-10-2022 16:27:34.913 INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+20-10-2022 16:27:34.914 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3930 ms
+20-10-2022 16:27:36.048 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:27:36.200 INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.1.Final
+20-10-2022 16:27:36.605 INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+20-10-2022 16:27:37.226 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:27:38.272 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:27:38.283 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:27:38.347 INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-10-2022 16:27:38.731 INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+20-10-2022 16:27:38.816 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20-10-2022 16:27:38.816 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:27:42.142 INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dcc7d1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@581da9e6, org.springframework.security.web.header.HeaderWriterFilter@21acc86a, org.springframework.web.filter.CorsFilter@6ac9742e, org.springframework.security.web.authentication.logout.LogoutFilter@d833770, com.elcom.backend.auth.jwt.JwtAuthenticationFilter@57063e08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6296c184, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a02172a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@411b75b4, org.springframework.security.web.session.SessionManagementFilter@71c1e70f, org.springframework.security.web.access.ExceptionTranslationFilter@6efd83ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e396d1c]
+20-10-2022 16:27:43.100 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Using default implementation for ThreadExecutor
+20-10-2022 16:27:43.130 INFO  o.quartz.core.SchedulerSignalerImpl.<init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20-10-2022 16:27:43.130 INFO  org.quartz.core.QuartzScheduler.<init> - Quartz Scheduler v.2.3.2 created.
+20-10-2022 16:27:43.131 INFO  org.quartz.simpl.RAMJobStore.initialize - RAMJobStore initialized.
+20-10-2022 16:27:43.133 INFO  org.quartz.core.QuartzScheduler.initialize - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20-10-2022 16:27:43.133 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20-10-2022 16:27:43.133 INFO  org.quartz.impl.StdSchedulerFactory.instantiate - Quartz scheduler version: 2.3.2
+20-10-2022 16:27:43.133 INFO  org.quartz.core.QuartzScheduler.setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@71d37ecd
+20-10-2022 16:27:43.249 INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+20-10-2022 16:27:43.263 INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+20-10-2022 16:27:43.265 INFO  o.s.a.r.c.CachingConnectionFactory.connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+20-10-2022 16:27:43.448 INFO  o.s.a.r.c.CachingConnectionFactory.createBareConnection - Created new connection: rabbitConnectionFactory#14237e5:0/SimpleConnection@426fb1c3 [delegate=amqp://elcom@127.0.0.1:5672/, localPort= 50591]
+20-10-2022 16:27:43.457 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-pSbf9ZpyQRGEc_sA1ZJZdw) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:27:43.458 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-npFX0mohRP2s46cx0TCSMg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:27:43.458 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-eAUcqpfKTzOaaOVTtVYM4g) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:27:43.458 INFO  o.s.amqp.rabbit.core.RabbitAdmin.initialize - Auto-declaring a non-durable, auto-delete, or exclusive Queue (spring.gen-DnIMRtNQSJ-yV0NT8DsE5w) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+20-10-2022 16:27:44.870 INFO  o.s.s.quartz.SchedulerFactoryBean.startScheduler - Starting Quartz Scheduler now
+20-10-2022 16:27:44.870 INFO  org.quartz.core.QuartzScheduler.start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20-10-2022 16:27:44.884 INFO  com.elcom.backend.ServiceApplication.logStarted - Started ServiceApplication in 15.048 seconds (JVM running for 16.382)
+20-10-2022 16:36:05.086 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:05.559 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:05.564 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:06.055 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:06.060 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:06.272 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:06.277 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:07.228 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:07.230 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:07.464 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:07.465 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:07.807 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:07.809 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:08.468 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:08.470 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:08.925 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:08.927 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Waiting for workers to finish.
+20-10-2022 16:36:09.825 INFO  o.s.a.r.l.SimpleMessageListenerContainer.doShutdown - Successfully waited for workers to finish.
+20-10-2022 16:36:09.826 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 16:36:10.087 INFO  o.s.s.quartz.SchedulerFactoryBean.destroy - Shutting down Quartz Scheduler
+20-10-2022 16:36:10.088 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+20-10-2022 16:36:10.088 INFO  org.quartz.core.QuartzScheduler.standby - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20-10-2022 16:36:10.089 INFO  org.quartz.core.QuartzScheduler.shutdown - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+20-10-2022 16:36:10.149 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-10-2022 16:36:10.157 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
