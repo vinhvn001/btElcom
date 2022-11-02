@@ -1,0 +1,10 @@
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\GatewayApplication.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\config\GatewayConfig.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\controller\GatewayController.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\validation\GatewayValidation.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\validation\AbstractValidation.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\messaging\rabbitmq\RabbitMQConfig.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\messaging\rabbitmq\RabbitMQClient.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\config\SecurityConfig.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\controller\BaseController.java
+D:\Elcom\testing\btElcom\microservice\library-parent\gateway-service\src\main\java\com\elcom\exception\ValidationException.java

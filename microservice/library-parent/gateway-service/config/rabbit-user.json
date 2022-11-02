@@ -1,0 +1,39 @@
+[    
+    {
+        "path": "/user",
+        "method": "GET",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/user/findAll",
+        "method": "GET",
+        "rabbit": "rpc"
+    },
+
+    {
+        "path": "/user/findUser",
+        "method": "GET",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/user",
+        "method": "POST",
+        "rabbit": "rpc"
+    }, {
+        "path": "/user",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    }, {
+        "path": "/user",
+        "method": "PUT",
+        "rabbit": "rpc"
+    },  {
+        "path": "/user/login",
+        "method": "POST",
+        "rabbit": "rpc"
+    }, {
+        "path": "/user/create",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+]
