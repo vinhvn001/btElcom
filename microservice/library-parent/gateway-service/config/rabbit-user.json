@@ -35,5 +35,9 @@
         "path": "/user/create",
         "method": "POST",
         "rabbit": "rpc"
+    },  {
+        "path": "/user/authentication",
+        "method": "POST",
+        "rabbit": "rpc"
     }
 ]

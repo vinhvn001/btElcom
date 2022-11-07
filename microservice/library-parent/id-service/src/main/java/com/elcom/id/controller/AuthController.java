@@ -26,10 +26,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import com.elcom.id.model.dto.AuthorizationResponseDTO;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.sql.Timestamp;
@@ -109,7 +106,8 @@ public class AuthController {
     }
 
     //Authentication
-    public ResponseMessage authorized(String requestPath, Map<String, String> headerParam) {
+    @PostMapping("/user/authentication")
+    public ResponseMessage authorized( @RequestHeader Map<String, String> headerParam) {
         ResponseMessage response = null;
         if (headerParam == null || headerParam.isEmpty()) {
             response = new ResponseMessage(HttpStatus.FORBIDDEN.value(), HttpStatus.FORBIDDEN.getReasonPhrase(),

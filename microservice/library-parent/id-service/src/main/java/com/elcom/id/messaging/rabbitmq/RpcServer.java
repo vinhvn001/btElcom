@@ -77,7 +77,11 @@ public class RpcServer {
                         } else if ("/user/login".equalsIgnoreCase(requestPath)) //Login
                         {
                             response = authController.userLogin( bodyParam);
+                        }else if ("/user/authentication".equalsIgnoreCase(requestPath)) //Login
+                        {
+                            response = authController.authorized( headerParam);
                         }
+
 
                         break;
                     case "PUT":

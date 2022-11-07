@@ -13,6 +13,7 @@
         <module>gateway-service</module>
         <module>common</module>
         <module>id-service</module>
+        <module>library-service</module>
 
     </modules>
     <parent>
