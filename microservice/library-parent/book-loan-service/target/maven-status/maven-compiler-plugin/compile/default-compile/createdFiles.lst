@@ -1,0 +1,15 @@
+com\elcom\loan\controller\BaseController.class
+com\elcom\loan\messaging\rabbitmq\RpcConfig.class
+com\elcom\loan\messaging\rabbitmq\RabbitMQConfig.class
+com\elcom\loan\controller\BorrowController.class
+com\elcom\loan\model\dto\BorrowBookResponseDTO.class
+com\elcom\loan\repository\BorrowRepository.class
+com\elcom\loan\messaging\rabbitmq\RabbitMQProperties.class
+com\elcom\loan\service\BorrowService.class
+com\elcom\loan\messaging\rabbitmq\RpcServer.class
+com\elcom\loan\service\impl\BorrowServiceImpl.class
+com\elcom\loan\messaging\rabbitmq\RabbitMQClient.class
+com\elcom\loan\model\dto\AuthorizationResponseDTO.class
+com\elcom\loan\BookLoanServiceApplication.class
+com\elcom\loan\model\Borrow.class
+com\elcom\loan\exception\ValidationException.class

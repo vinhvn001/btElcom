@@ -6,6 +6,7 @@ com\elcom\library\service\CategoryService.class
 com\elcom\library\model\Book.class
 com\elcom\library\model\Category.class
 com\elcom\library\service\AuthorService.class
+com\elcom\library\controller\BookController.class
 com\elcom\library\controller\AuthorController.class
 com\elcom\library\controller\BaseController.class
 com\elcom\library\service\BookService.class
@@ -18,5 +19,6 @@ com\elcom\library\model\Author.class
 com\elcom\library\repository\BookRepository.class
 com\elcom\library\messaging\rabbitmq\RabbitMQClient.class
 com\elcom\library\messaging\rabbitmq\RpcConfig.class
+com\elcom\library\controller\CategoryController.class
 com\elcom\library\repository\CategoryRepository.class
 com\elcom\library\messaging\rabbitmq\RabbitMQConfig.class

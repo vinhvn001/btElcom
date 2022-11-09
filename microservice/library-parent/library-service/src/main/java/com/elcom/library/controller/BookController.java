@@ -5,6 +5,7 @@ import com.elcom.library.model.Author;
 import com.elcom.library.model.Book;
 import com.elcom.library.model.Category;
 import com.elcom.library.model.dto.AuthorizationResponseDTO;
+import com.elcom.library.model.dto.BorrowBookResponseDTO;
 import com.elcom.library.service.AuthorService;
 import com.elcom.library.service.BookService;
 import com.elcom.library.service.CategoryService;
@@ -217,6 +218,46 @@ public class BookController extends BaseController{
         return response;
     }
 
+    @PostMapping("/library/borrow")
+    public ResponseMessage borrowBook(@RequestHeader Map<String,String> headerParam, @RequestBody Map<String, Object> bodyParam){
+        ResponseMessage response = null;
+        AuthorizationResponseDTO dto = authenticateToken(headerParam);
+        if (dto == null) {
+            response = new ResponseMessage(new MessageContent(HttpStatus.FORBIDDEN.value(), "Bạn chưa đăng nhập", null));
+        }else {
+            String bookName = (String)bodyParam.get("bookName");
+            if(bookService.findByBookName(bookName) == null){
+                response = new ResponseMessage(new MessageContent(HttpStatus.NOT_FOUND.value(), "Wrong book name", null));
+            }else if(bookService.findByBookName(bookName).getBookAmount() == null || bookService.findByBookName(bookName).getBookAmount() == 0 ){
+                response = new ResponseMessage(new MessageContent(HttpStatus.UNAVAILABLE_FOR_LEGAL_REASONS.value(), "Out of book", null));
+            }
+            else{
+                bookService.borrowOne(bookName);
+                BorrowBookResponseDTO borrowDto = new BorrowBookResponseDTO(bodyParam);
+                response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), "OK", borrowDto));
+            }
+        }
+        return response;
+    }
+
+    @PostMapping("/library/return")
+    public ResponseMessage returnBook(@RequestHeader Map<String,String> headerParam, @RequestBody Map<String, Object> bodyParam){
+        ResponseMessage response = null;
+        AuthorizationResponseDTO dto = authenticateToken(headerParam);
+        if (dto == null) {
+            response = new ResponseMessage(new MessageContent(HttpStatus.FORBIDDEN.value(), "Bạn chưa đăng nhập", null));
+        }else {
+            String bookName = (String)bodyParam.get("bookName");
+            if(bookService.findByBookName(bookName) == null){
+                response = new ResponseMessage(new MessageContent(HttpStatus.NOT_FOUND.value(), "Wrong book name", null));
+            }else{
+                bookService.returnOne(bookName);
+                BorrowBookResponseDTO borrowDto = new BorrowBookResponseDTO(bodyParam);
+                response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), "OK", borrowDto));
+            }
+        }
+        return response;
+    }
 }
 
 

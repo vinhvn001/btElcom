@@ -88,5 +88,20 @@ public class BookServiceImpl implements BookService {
         return bookRepository.findByBookName(bookName);
     }
 
+    @Override
+    public void borrowOne(String bookName){
+        Book book = bookRepository.findByBookName(bookName);
+        Integer amount  = book.getBookAmount() +1 ;
+        book.setBookAmount(amount);
+        bookRepository.save(book);
+    }
+
+    @Override
+    public void returnOne(String bookName){
+        Book book = bookRepository.findByBookName(bookName);
+        Integer amount  = book.getBookAmount() - 1 ;
+        book.setBookAmount(amount);
+        bookRepository.save(book);
+    }
 
 }

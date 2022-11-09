@@ -1,0 +1,36 @@
+[
+  {
+    "path": "/loan/findAll",
+    "method": "GET",
+    "rabbit": "rpc"
+  },{
+  "path": "/loan/findByBookName",
+  "method": "POST",
+  "rabbit": "rpc"
+  },
+  {
+    "path": "/loan/findByUsername",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+  "path": "/loan/create",
+  "method": "POST",
+  "rabbit": "rpc"
+  },
+  {
+    "path": "/loan/create",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/loan/update",
+    "method": "PUT",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/loan/delete",
+    "method": "DELETE",
+    "rabbit": "rpc"
+  }
+]

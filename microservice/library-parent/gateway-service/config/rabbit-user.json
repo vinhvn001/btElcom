@@ -39,5 +39,9 @@
         "path": "/user/authentication",
         "method": "POST",
         "rabbit": "rpc"
+    },  {
+        "path": "/user/exist",
+        "method": "POST",
+        "rabbit": "rpc"
     }
 ]

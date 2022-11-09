@@ -15,6 +15,16 @@
     "rabbit": "rpc"
   },
   {
+    "path": "/library/borrow",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/library/return",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
     "path": "/library/author",
     "method": "PUT",
     "rabbit": "rpc"

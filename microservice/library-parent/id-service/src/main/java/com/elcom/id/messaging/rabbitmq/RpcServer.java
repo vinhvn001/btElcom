@@ -80,6 +80,9 @@ public class RpcServer {
                         }else if ("/user/authentication".equalsIgnoreCase(requestPath)) //Login
                         {
                             response = authController.authorized( headerParam);
+                        }else if ("/user/exist".equalsIgnoreCase(requestPath)) //Login
+                        {
+                            response = userController.checkExistUser(bodyParam);
                         }
 
 

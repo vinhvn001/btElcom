@@ -92,6 +92,12 @@ public class RpcServer {
                         }else if("/library/book".equalsIgnoreCase(requestPath))
                         {
                             response = bookController.createBook(headerParam,bodyParam);
+                        }else if("/library/borrow".equalsIgnoreCase(requestPath))
+                        {
+                            response = bookController.borrowBook(headerParam,bodyParam);
+                        }else if("/library/return".equalsIgnoreCase(requestPath))
+                        {
+                            response = bookController.returnBook(headerParam,bodyParam);
                         }
 
                         break;

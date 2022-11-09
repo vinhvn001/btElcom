@@ -31,4 +31,8 @@ public interface BookService {
     List<Object[]> findBookList();
 
     Book findByBookName(String bookName);
+
+    void borrowOne(String bookName);
+
+    void returnOne(String bookName);
 }

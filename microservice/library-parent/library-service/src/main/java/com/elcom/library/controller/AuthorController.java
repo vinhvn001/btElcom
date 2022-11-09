@@ -32,8 +32,8 @@ public class AuthorController extends BaseController {
         }else{
             List<Author> allAuthor = authorService.findAll();
             if (allAuthor == null || allAuthor.isEmpty()) {
-                response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.toString(),
-                        new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(), null));
+                response = new ResponseMessage(HttpStatus.NO_CONTENT.value(), HttpStatus.NO_CONTENT.toString(),
+                        new MessageContent(HttpStatus.NO_CONTENT.value(), HttpStatus.NO_CONTENT.toString(), null));
             }else{
                 response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.toString(),
                 new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(),

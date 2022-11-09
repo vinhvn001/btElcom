@@ -275,4 +275,21 @@ public class UserController extends BaseController {
         }
         return response;
     }
+
+    @PostMapping("/user/exist")
+    public ResponseMessage checkExistUser( @RequestBody Map<String,Object> bodyParam) {
+        ResponseMessage response = null;
+        String username = (String)bodyParam.get("username");
+        User user = userService.findByUsername(username);
+        if(user == null){
+            response = new ResponseMessage(HttpStatus.NOT_FOUND.value(), "User not exist",
+                    new MessageContent(HttpStatus.NOT_FOUND.value(), "User not exist", null));
+        }else{
+            UserDTO userDTO = new UserDTO(user);
+            response = new ResponseMessage(HttpStatus.OK.value(), "OK",
+                    new MessageContent(HttpStatus.OK.value(), "OK", userDTO));
+        }
+
+        return response;
+    }
 }
