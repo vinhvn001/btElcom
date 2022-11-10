@@ -98,7 +98,17 @@ public class RpcServer {
                         }else if("/library/return".equalsIgnoreCase(requestPath))
                         {
                             response = bookController.returnBook(headerParam,bodyParam);
+                        }else if("/library/findBookByAuthor".equalsIgnoreCase(requestPath))
+                        {
+                            response = bookController.findBookByAuthor(headerParam,bodyParam);
+                        }else if("/library/findBookByFirstLetter".equalsIgnoreCase(requestPath))
+                        {
+                            response = bookController.findBookByFirstLetter(headerParam,bodyParam);
+                        }else if("/library/findBookByCategory".equalsIgnoreCase(requestPath))
+                        {
+                            response = bookController.findBookByCategory(headerParam,bodyParam);
                         }
+
 
                         break;
                     case "PUT":

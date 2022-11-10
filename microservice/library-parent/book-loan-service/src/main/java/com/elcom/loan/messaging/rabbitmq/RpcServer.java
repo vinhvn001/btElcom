@@ -71,6 +71,13 @@ public class RpcServer {
                         }else if("/loan/findByUsername".equalsIgnoreCase(requestPath))
                         {
                             response = borrowController.findByUsername( headerParam,bodyParam);
+                        }else if("/loan/maxBookInTime".equalsIgnoreCase(requestPath))
+                        {
+                            response = borrowController.maxBookInTime(bodyParam);
+                        }
+                        else if("/loan/borrowInTime".equalsIgnoreCase(requestPath))
+                        {
+                            response = borrowController.borrowInTime( bodyParam);
                         }
 
                         break;

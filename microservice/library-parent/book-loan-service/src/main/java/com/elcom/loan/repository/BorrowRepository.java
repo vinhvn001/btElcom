@@ -21,12 +21,14 @@ public interface BorrowRepository extends JpaRepository<Borrow, Long> {
     List<Borrow> findByBookName(String  bookName);
 
 /*    @Query("select count(a)  from Borrow a where a.borrowedDate between :startDate and :endDate ")
-    Integer borrowAmountInTime(@RequestParam Date startDate,@RequestParam Date endDate);
+    Integer borrowAmountInTime(@RequestParam Date startDate,@RequestParam Date endDate);*/
 
-    @Query("select  a.bookId.bookName, count(a.bookId) from Borrow a where a.borrowedDate between  :startDate and :endDate group by a.bookId order by count(a.bookId) DESC")
-    List<Object[]> maxBookInTime(@RequestParam Date startDate, @RequestParam Date endDate, Pageable pageable);
+    @Query("select  a.bookName, count(a.bookName) from Borrow a where a.borrowedDate between  :startDate and :endDate group by a.bookName order by count(a.bookName) DESC")
+    List<Object[]> maxBookInTime( Date startDate,  Date endDate, Pageable pageable);
 
-    @Query("select a.bookId.bookName, count(a.bookId) as amount from Borrow a where a.borrowedDate between :startDate and :endDate group by a.bookId ")
-    List<Object[]> borrowInTime(@RequestParam Date startDate, @RequestParam Date endDate);
-*/
+    @Query("select a.bookName, count(a.bookName) as amount from Borrow a where a.borrowedDate between :startDate and :endDate group by a.bookName ")
+    List<Object[]> borrowInTime( Date startDate, Date endDate);
+
+
+
 }

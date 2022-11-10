@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "4107e77f-94c6-4965-be67-75389ea1a6ae",
+		"name": "report-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22935470"
+	},
+	"item": [
+		{
+			"name": "find book amount by author name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Tran Hoang Long\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8988/report/findBookByAuthor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"report",
+						"findBookByAuthor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find book amount by category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sach giao khoa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8988/report/findBookByCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"report",
+						"findBookByCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find book amount by first letter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstLetter\":\"T\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8988/report/findBookByLetter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"report",
+						"findBookByLetter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "The most borrowed book in time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\":\"2022-11-01\",\r\n    \"endDate\":\"2022-11-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8988/report/bookInTime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"report",
+						"bookInTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book get borrowed in time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\":\"2022-11-01\",\r\n    \"endDate\":\"2022-11-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8988/report/borrowInTime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"report",
+						"borrowInTime"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -4,6 +4,7 @@ package com.elcom.loan.service;
 
 import com.elcom.loan.model.Borrow;
 
+import java.awt.print.Pageable;
 import java.util.Date;
 import java.util.List;
 

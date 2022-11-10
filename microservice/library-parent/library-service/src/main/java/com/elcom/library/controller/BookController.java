@@ -264,6 +264,61 @@ public class BookController extends BaseController{
         }
         return response;
     }
+
+    @PostMapping("/library/findBookByAuthor")
+    public ResponseMessage findBookByAuthor(@RequestHeader Map<String, String> headerParam, @RequestBody Map<String, Object> bodyParam){
+        ResponseMessage response = null;
+        AuthorizationResponseDTO dto = authenticateToken(headerParam);
+        if (dto == null) {
+            response = new ResponseMessage(new MessageContent(HttpStatus.FORBIDDEN.value(), "Bạn chưa đăng nhập", null));
+        }else{
+            String authorName = (String)bodyParam.get("name");
+            Author author = authorService.findByAuthorName(authorName);
+            if(author == null){
+                response = new ResponseMessage(new MessageContent(HttpStatus.NOT_FOUND.value(), "Author not exist", null));
+            }else{
+                List<Object[]> result = bookService.findBookAmountByAuthorId(author);
+                response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), "OK", result));
+            }
+        }
+        return response;
+    }
+    @PostMapping("/library/findBookByFirstLetter")
+    public ResponseMessage findBookByFirstLetter(@RequestHeader Map<String, String> headerParam, @RequestBody Map<String, Object> bodyParam){
+        ResponseMessage response = null;
+        AuthorizationResponseDTO dto = authenticateToken(headerParam);
+        if (dto == null) {
+            response = new ResponseMessage(new MessageContent(HttpStatus.FORBIDDEN.value(), "Bạn chưa đăng nhập", null));
+        }else{
+            String firstLetter = (String)bodyParam.get("firstLetter");
+            List<Object[]> result = bookService.findBookAmountByFirstLetter(firstLetter);
+            if(result == null){
+                response = new ResponseMessage(new MessageContent(HttpStatus.NOT_FOUND.value(), "Not exist book with this letter", null));
+            }else{
+
+                response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), "OK", result));
+            }
+        }
+        return response;
+    }
+    @PostMapping("/library/findBookByCategory")
+    public ResponseMessage findBookByCategory(@RequestHeader Map<String, String> headerParam, @RequestBody Map<String, Object> bodyParam){
+        ResponseMessage response = null;
+        AuthorizationResponseDTO dto = authenticateToken(headerParam);
+        if (dto == null) {
+            response = new ResponseMessage(new MessageContent(HttpStatus.FORBIDDEN.value(), "Bạn chưa đăng nhập", null));
+        }else{
+            String categoryName = (String)bodyParam.get("name");
+            Category category = categoryService.findByCategoryName(categoryName);
+            if(category == null){
+                response = new ResponseMessage(new MessageContent(HttpStatus.NOT_FOUND.value(), "Category not exist", null));
+            }else{
+                List<Object[]> result = bookService.findBookAmountByCategoryId(category);
+                response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), "OK", result));
+            }
+        }
+        return response;
+    }
 }
 
 

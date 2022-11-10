@@ -19,8 +19,8 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     @Query("select b.bookName, b.bookAmount from Book b where b.firstLetter= ?1" )
     List<Object[]> findBookAmountByFirstLetter(String firstLetter);
 
-    @Query("select sum(b.bookAmount)from Book b where b.categoryId= ?1" )
-    Integer findBookAmountByCategoryId(Category id);
+    @Query("select b.bookName, b.bookAmount from Book b where b.categoryId= ?1" )
+    List<Object[]> findBookAmountByCategoryId(Category id);
 
     @Query("select b.bookName, b.bookAmount from Book b")
     List<Object[]> findBookList();

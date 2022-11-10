@@ -50,15 +50,7 @@ public class BorrowServiceImpl implements BorrowService {
         return null;
     }
 
-    @Override
-    public List<Object[]> maxBookInTime(Date startDate, Date endDate) {
-        return null;
-    }
 
-    @Override
-    public List<Object[]> borrowInTime(Date startDate, Date endDate) {
-        return null;
-    }
 
     @Override
     public List<Borrow> findByUsername(String username) {
@@ -71,15 +63,14 @@ public class BorrowServiceImpl implements BorrowService {
 //        return borrowRepository.borrowAmountInTime(startDate, endDate);
 //    }
 //
-//    @Override
-//    public List<Object[]> maxBookInTime(Date startDate, Date endDate) {
-//        Pageable paging =  PageRequest.of(0,1);
-//         return borrowRepository.maxBookInTime(startDate, endDate,paging);
-//
-//    }
-//
-//    @Override
-//    public List<Object[]> borrowInTime(Date startDate, Date endDate){
-//        return borrowRepository.borrowInTime(startDate, endDate);
-//    }
+    @Override
+    public List<Object[]> maxBookInTime(Date startDate, Date endDate) {
+        Pageable paging =  PageRequest.of(0,1);
+         return borrowRepository.maxBookInTime(startDate, endDate,paging);
+    }
+
+    @Override
+    public List<Object[]> borrowInTime(Date startDate, Date endDate){
+        return borrowRepository.borrowInTime(startDate, endDate);
+    }
 }

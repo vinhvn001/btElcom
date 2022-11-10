@@ -33,4 +33,16 @@
     "method": "DELETE",
     "rabbit": "rpc"
   }
+,
+  {
+    "path": "/loan/maxBookInTime",
+    "method": "POST",
+    "rabbit": "rpc"
+  }
+,
+  {
+    "path": "/loan/borrowInTime",
+    "method": "POST",
+    "rabbit": "rpc"
+  }
 ]

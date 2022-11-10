@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/report/findBookByAuthor",
+    "method": "POST",
+    "rabbit": "rpc"
+  }
+  ,  {
+  "path": "/report/findBookByCategory",
+  "method": "POST",
+  "rabbit": "rpc"
+}
+  ,  {
+  "path": "/report/findBookByLetter",
+  "method": "POST",
+  "rabbit": "rpc"
+},
+  {
+    "path": "/report/bookInTime",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+  "path": "/report/borrowInTime",
+  "method": "POST",
+  "rabbit": "rpc"
+}
+]

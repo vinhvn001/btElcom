@@ -52,6 +52,23 @@
     "method": "POST",
     "rabbit": "rpc"
   }
+,  {
+  "path": "/library/findBookByAuthor",
+  "method": "POST",
+  "rabbit": "rpc"
+}
+,
+  {
+    "path": "/library/findBookByCategory",
+    "method": "POST",
+    "rabbit": "rpc"
+  }
+,
+  {
+    "path": "/library/findBookByFirstLetter",
+    "method": "POST",
+    "rabbit": "rpc"
+  }
 ,
   {
     "path": "/library/category",

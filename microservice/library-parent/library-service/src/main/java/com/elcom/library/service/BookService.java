@@ -26,7 +26,7 @@ public interface BookService {
 
     List<Object[]> findBookAmountByFirstLetter(String firstLetter);
 
-    Integer findBookAmountByCategoryId(Category id);
+    List<Object[]> findBookAmountByCategoryId(Category id);
 
     List<Object[]> findBookList();
 

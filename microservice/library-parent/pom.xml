@@ -16,6 +16,7 @@
         <module>library-service</module>
         <module>book-loan-service</module>
         <module>elastic-service</module>
+        <module>report-service</module>
 
 
     </modules>

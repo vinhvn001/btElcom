@@ -74,7 +74,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Integer findBookAmountByCategoryId(Category id) {
+    public List<Object[]> findBookAmountByCategoryId(Category id) {
         return bookRepository.findBookAmountByCategoryId(id);
     }
 

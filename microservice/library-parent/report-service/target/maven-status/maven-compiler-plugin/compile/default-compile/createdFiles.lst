@@ -1,0 +1,10 @@
+com\elcom\report\exception\ValidationException.class
+com\elcom\report\ReportServiceApplication.class
+com\elcom\report\rabbitmq\RpcConfig.class
+com\elcom\report\controller\ReportController.class
+com\elcom\report\model\AuthorizationResponseDTO.class
+com\elcom\report\rabbitmq\RabbitMQConfig.class
+com\elcom\report\rabbitmq\RabbitMQProperties.class
+com\elcom\report\rabbitmq\RabbitMQClient.class
+com\elcom\report\controller\BaseController.class
+com\elcom\report\rabbitmq\RpcServer.class

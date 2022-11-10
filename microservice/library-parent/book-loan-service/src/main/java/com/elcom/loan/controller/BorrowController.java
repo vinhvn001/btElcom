@@ -17,6 +17,8 @@ import com.elcom.loan.service.BorrowService;
 
 
 import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -283,5 +285,48 @@ public class BorrowController extends BaseController{
         }
         return response;
     }
+
+    @PostMapping("/loan/maxBookInTime")
+    public ResponseMessage maxBookInTime(@RequestBody Map<String,Object> bodyParam) throws ParseException {
+        ResponseMessage response = null;
+        String start =(String) bodyParam.get("startDate");
+        String end = (String)bodyParam.get("endDate");
+
+        Date startDate = new SimpleDateFormat("yyyy-MM-dd").parse(start);
+        Date endDate = new SimpleDateFormat("yyyy-MM-dd").parse(end);
+
+        bodyParam.put("startDate", startDate);
+        bodyParam.put("endDate", endDate);
+        List<Object[]> result = borrowService.maxBookInTime(startDate, endDate);
+        if(result == null || result.isEmpty()){
+            response = new ResponseMessage(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase(),
+                    new MessageContent(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase(), null));
+        }else{
+            response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(),result));
+        }
+        return response;
+    }
+
+    @PostMapping("/loan/borrowInTime")
+    public ResponseMessage borrowInTime(@RequestBody Map<String,Object> bodyParam) throws ParseException {
+        ResponseMessage response = null;
+        String start =(String) bodyParam.get("startDate");
+        String end = (String)bodyParam.get("endDate");
+
+        Date startDate = new SimpleDateFormat("yyyy-MM-dd").parse(start);
+        Date endDate = new SimpleDateFormat("yyyy-MM-dd").parse(end);
+
+        bodyParam.put("startDate", startDate);
+        bodyParam.put("endDate", endDate);
+        List<Object[]> result = borrowService.borrowInTime(startDate, endDate);
+        if(result == null || result.isEmpty()){
+            response = new ResponseMessage(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase(),
+                    new MessageContent(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase(), null));
+        }else{
+            response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(),result));
+        }
+        return response;
+    }
+
 
 }
