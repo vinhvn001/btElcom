@@ -1,0 +1,78 @@
+[
+  {
+    "path": "/elastic/book/findAll",
+    "method": "GET",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/book/findByName",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/book/save",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/book/update",
+    "method": "PUT",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/book/delete",
+    "method": "DELETE",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/author/findByName",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/author/findAll",
+    "method": "GET",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/author/save",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/author/delete",
+    "method": "DELETE",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/author/update",
+    "method": "DELETE",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/category/delete",
+    "method": "DELETE",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/category/findByName",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/category/findAll",
+    "method": "GET",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/category/save",
+    "method": "POST",
+    "rabbit": "rpc"
+  },
+  {
+    "path": "/elastic/category/update",
+    "method": "UPDATE",
+    "rabbit": "rpc"
+  }
+
+]

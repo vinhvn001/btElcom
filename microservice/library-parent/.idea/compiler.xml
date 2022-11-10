@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="id-service" />
         <module name="book-loan-service" />
+        <module name="elastic-service" />
         <module name="library-service" />
         <module name="common" />
         <module name="gateway-service" />
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="book-loan-service" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="elastic-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="id-service" options="-parameters" />
       <module name="library-service" options="-parameters" />

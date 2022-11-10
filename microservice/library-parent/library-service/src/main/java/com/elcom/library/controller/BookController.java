@@ -5,6 +5,7 @@ import com.elcom.library.model.Author;
 import com.elcom.library.model.Book;
 import com.elcom.library.model.Category;
 import com.elcom.library.model.dto.AuthorizationResponseDTO;
+import com.elcom.library.model.dto.BookDTO;
 import com.elcom.library.model.dto.BorrowBookResponseDTO;
 import com.elcom.library.service.AuthorService;
 import com.elcom.library.service.BookService;
@@ -44,8 +45,8 @@ public class BookController extends BaseController{
         }else{
             List<Book> allBook = bookService.findAll();
             if (allBook == null || allBook.isEmpty()) {
-                response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.toString(),
-                        new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(), null));
+                response = new ResponseMessage(HttpStatus.NO_CONTENT.value(), HttpStatus.NO_CONTENT.toString(),
+                        new MessageContent(HttpStatus.NO_CONTENT.value(), HttpStatus.NO_CONTENT.toString(), null));
             }else{
                 response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.toString(),
                 new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(),
@@ -118,6 +119,7 @@ public class BookController extends BaseController{
                         } else {
                             try {
                                 bookService.create(book);
+                                 saveBookToElastic(book.getId(), book.getBookName());
                                 response = new ResponseMessage(HttpStatus.CREATED.value(), HttpStatus.CREATED.getReasonPhrase(),
                                         new MessageContent(book));
                             } catch (Exception ex) {
@@ -171,11 +173,13 @@ public class BookController extends BaseController{
                         existBook = bookService.findByBookName(bookName);
                     }
                     if(existBook != null){
-                        response = new ResponseMessage(HttpStatus.CONFLICT.value(), "Book đã tồn tại",
-                                new MessageContent(HttpStatus.CONFLICT.value(), "Book đã tồn tại", null));
+                        response = new ResponseMessage(HttpStatus.CONFLICT.value(), "Book bạn nhập vào đã tồn tại",
+                                new MessageContent(HttpStatus.CONFLICT.value(), "Book bạn nhập vào đã tồn tại", null));
                     }else{
                         try {
                             bookService.update(currentBook);
+                            // update book to elastic
+                            updateBookToElastic(Long.parseLong(id),bookName);
                             response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(),
                                     new MessageContent(currentBook));
                         } catch (Exception ex){
@@ -207,6 +211,8 @@ public class BookController extends BaseController{
                             new MessageContent(HttpStatus.NOT_FOUND.value(), "Invalid param value", null));
                 }else{
                     categoryService.delete(Id);
+                    //delete from elastic
+                    deleteBookFromElastic(Id);
                     response =  new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(),
                             new MessageContent(null));
                 }

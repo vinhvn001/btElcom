@@ -87,6 +87,10 @@ public class AuthorController extends BaseController {
                     }else{
                         try {
                             authorService.create(authorName);
+                            //save to elastic
+                            Author author = authorService.findByAuthorName(authorName);
+                            saveAuthorToElastic(author.getId(),author.getAuthorName());
+
                             response = new ResponseMessage(HttpStatus.CREATED.value(), HttpStatus.CREATED.getReasonPhrase(),
                                     new MessageContent(authorName));
                         } catch (Exception ex){
@@ -128,6 +132,8 @@ public class AuthorController extends BaseController {
                     }else{
                         try {
                             authorService.update(Id, authorName);
+                            //update to elastic
+                            updateAuthorToElastic(Id,authorName);
                             response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(),
                                     new MessageContent(authorName));
                         } catch (Exception ex){
@@ -159,6 +165,9 @@ public class AuthorController extends BaseController {
                             new MessageContent(HttpStatus.NOT_FOUND.value(), "Invalid param value", null));
                 }else{
                     authorService.delete(Id);
+                    //delete from elastic
+                    deleteAuthorFromElastic(Id);
+
                     response =  new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(),
                             new MessageContent(null));
                 }

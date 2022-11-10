@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "AUTHOR")
+@Table(name = "author")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -17,11 +17,11 @@ import java.io.Serializable;
 public class Author implements Serializable {
 
     @Id
-    @Column(name = "AUTHOR_ID")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "AUTHOR_NAME")
+    @Column(name = "author_name")
     private String authorName;
 
 

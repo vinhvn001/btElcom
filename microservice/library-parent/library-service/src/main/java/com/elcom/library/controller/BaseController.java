@@ -4,6 +4,7 @@ import com.elcom.constant.ResourcePath;
 import com.elcom.library.messaging.rabbitmq.RabbitMQClient;
 import com.elcom.library.messaging.rabbitmq.RabbitMQProperties;
 import com.elcom.library.model.dto.AuthorizationResponseDTO;
+import com.elcom.library.model.dto.BookDTO;
 import com.elcom.message.MessageContent;
 import com.elcom.message.RequestMessage;
 import com.elcom.message.ResponseMessage;
@@ -89,5 +90,150 @@ public class BaseController {
         return null;
     }
 
+    public void saveBookToElastic(Long id, String name){
+        //call Elastic Rpc
+        Map<String,Object> bodyParam = new HashMap<>();
+        bodyParam.put("id", id);
+        bodyParam.put("name", name);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("POST");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_SAVE_BOOK_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(bodyParam);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Save book to elastic - result: " + result);
 
+    }
+    public void updateBookToElastic(Long id, String name){
+        //call Elastic Rpc
+        Map<String,Object> bodyParam = new HashMap<>();
+        bodyParam.put("id", id);
+        bodyParam.put("name", name);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("PUT");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_UPDATE_BOOK_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(bodyParam);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Update book to elastic - result: " + result);
+
+    }
+    public void deleteBookFromElastic(Long id){
+        //call Elastic Rpc
+        String Id = String.valueOf(id);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("DELETE");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_DELETE_BOOK_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(null);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        elasticRpcRequest.setPathParam(Id);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Delete book from elastic - result: " + result);
+
+    }
+
+    public void saveAuthorToElastic(Long id, String name){
+        //call Elastic Rpc
+        Map<String,Object> bodyParam = new HashMap<>();
+        bodyParam.put("id", id);
+        bodyParam.put("name", name);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("POST");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_SAVE_AUTHOR_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(bodyParam);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Save author to elastic - result: " + result);
+    }
+    public void updateAuthorToElastic(Long id, String name){
+        //call Elastic Rpc
+        Map<String,Object> bodyParam = new HashMap<>();
+        bodyParam.put("id", id);
+        bodyParam.put("name", name);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("PUT");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_UPDATE_AUTHOR_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(bodyParam);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Update author to elastic - result: " + result);
+    }
+    public void deleteAuthorFromElastic(Long id){
+        //call Elastic Rpc
+        String Id = String.valueOf(id);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("DELETE");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_DELETE_AUTHOR_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(null);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        elasticRpcRequest.setPathParam(Id);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Delete author from elastic - result: " + result);
+    }
+
+    public void saveCategoryToElastic(Long id, String name){
+        //call Elastic Rpc
+        Map<String,Object> bodyParam = new HashMap<>();
+        bodyParam.put("id", id);
+        bodyParam.put("name", name);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("POST");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_SAVE_CATEGORY_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(bodyParam);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Save category to elastic - result: " + result);
+    }
+    public void updateCategoryToElastic(Long id, String name){
+        //call Elastic Rpc
+        Map<String,Object> bodyParam = new HashMap<>();
+        bodyParam.put("id", id);
+        bodyParam.put("name", name);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("PUT");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_UPDATE_CATEGORY_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(bodyParam);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Update category to elastic - result: " + result);
+    }
+    public void deleteCategoryFromElastic(Long id){
+        //call Elastic Rpc
+        String Id = String.valueOf(id);
+        RequestMessage elasticRpcRequest = new RequestMessage();
+        elasticRpcRequest.setRequestMethod("DELETE");
+        elasticRpcRequest.setRequestPath(RabbitMQProperties.ELASTIC_RPC_DELETE_CATEGORY_URL);
+        elasticRpcRequest.setVersion(ResourcePath.VERSION);
+        elasticRpcRequest.setBodyParam(null);
+        elasticRpcRequest.setUrlParam(null);
+        elasticRpcRequest.setHeaderParam(null);
+        elasticRpcRequest.setPathParam(Id);
+        String result = rabbitMQClient.callRpcService(RabbitMQProperties.ELASTIC_RPC_EXCHANGE,
+                RabbitMQProperties.ELASTIC_RPC_QUEUE, RabbitMQProperties.ELASTIC_RPC_KEY, elasticRpcRequest.toJsonString());
+        LOGGER.info("Delete category from elastic - result: " + result);
+    }
 }

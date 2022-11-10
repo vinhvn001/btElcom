@@ -83,6 +83,10 @@ public class CategoryController extends BaseController{
                     }else{
                         try {
                             categoryService.create(categoryName);
+                            //save category to elastic
+                            Category category = categoryService.findByCategoryName(categoryName);
+                            saveCategoryToElastic(category.getId(), category.getCategoryName());
+
                             response = new ResponseMessage(HttpStatus.CREATED.value(), HttpStatus.CREATED.getReasonPhrase(),
                                     new MessageContent(categoryName));
                         } catch (Exception ex){
@@ -124,6 +128,8 @@ public class CategoryController extends BaseController{
                     }else{
                         try {
                             categoryService.update(Id, categoryName);
+                            //update to elastic
+                            updateCategoryToElastic(Id, categoryName);
                             response = new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(),
                                     new MessageContent(categoryName));
                         } catch (Exception ex){
@@ -155,6 +161,8 @@ public class CategoryController extends BaseController{
                             new MessageContent(HttpStatus.NOT_FOUND.value(), "Invalid param value", null));
                 }else{
                     categoryService.delete(Id);
+                    //delete from elastic
+                    deleteCategoryFromElastic(Id);
                     response =  new ResponseMessage(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(),
                             new MessageContent(null));
                 }

@@ -200,15 +200,15 @@ public class BaseController {
 
     public AuthorizationResponseDTO checkExistUser( Map<String, Object> bodyParam) {
         //Authen -> call rpc authen headerMap
-        RequestMessage libraryRpcRequest = new RequestMessage();
-        libraryRpcRequest.setRequestMethod("POST");
-        libraryRpcRequest.setRequestPath(RabbitMQProperties.USER_RPC_EXIST_URL);
-        libraryRpcRequest.setVersion(ResourcePath.VERSION);
-        libraryRpcRequest.setBodyParam(bodyParam);
-        libraryRpcRequest.setUrlParam(null);
-        libraryRpcRequest.setHeaderParam(null);
+        RequestMessage userRpcRequest = new RequestMessage();
+        userRpcRequest.setRequestMethod("POST");
+        userRpcRequest.setRequestPath(RabbitMQProperties.USER_RPC_EXIST_URL);
+        userRpcRequest.setVersion(ResourcePath.VERSION);
+        userRpcRequest.setBodyParam(bodyParam);
+        userRpcRequest.setUrlParam(null);
+        userRpcRequest.setHeaderParam(null);
         String result = rabbitMQClient.callRpcService(RabbitMQProperties.USER_RPC_EXCHANGE,
-                RabbitMQProperties.USER_RPC_QUEUE, RabbitMQProperties.USER_RPC_KEY, libraryRpcRequest.toJsonString());
+                RabbitMQProperties.USER_RPC_QUEUE, RabbitMQProperties.USER_RPC_KEY, userRpcRequest.toJsonString());
         LOGGER.info("check exist user - result: " + result);
         if (result != null) {
             ObjectMapper mapper = new ObjectMapper();

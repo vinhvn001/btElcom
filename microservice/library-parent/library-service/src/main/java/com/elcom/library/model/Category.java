@@ -10,14 +10,14 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name="CATEGORY")
+@Table(name="category")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 public class Category implements Serializable {
     @Id
-    @Column(name = "category_id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "category_name")
