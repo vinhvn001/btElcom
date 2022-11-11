@@ -73,4 +73,9 @@ public class BorrowServiceImpl implements BorrowService {
     public List<Object[]> borrowInTime(Date startDate, Date endDate){
         return borrowRepository.borrowInTime(startDate, endDate);
     }
+
+    @Override
+    public List<Object[]> expiredBorrow() {
+        return borrowRepository.expiredBorrow();
+    }
 }

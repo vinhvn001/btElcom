@@ -23,12 +23,14 @@ public interface BorrowRepository extends JpaRepository<Borrow, Long> {
 /*    @Query("select count(a)  from Borrow a where a.borrowedDate between :startDate and :endDate ")
     Integer borrowAmountInTime(@RequestParam Date startDate,@RequestParam Date endDate);*/
 
-    @Query("select  a.bookName, count(a.bookName) from Borrow a where a.borrowedDate between  :startDate and :endDate group by a.bookName order by count(a.bookName) DESC")
+    @Query("select  a.bookName, count(a.bookName) as amount from Borrow a where a.borrowedDate between  :startDate and :endDate group by a.bookName order by count(a.bookName) DESC")
     List<Object[]> maxBookInTime( Date startDate,  Date endDate, Pageable pageable);
 
     @Query("select a.bookName, count(a.bookName) as amount from Borrow a where a.borrowedDate between :startDate and :endDate group by a.bookName ")
     List<Object[]> borrowInTime( Date startDate, Date endDate);
 
+    @Query("select a.username, a.bookName, a.limitDate from Borrow a where CURRENT_DATE > a.limitDate")
+    List<Object[]> expiredBorrow();
 
 
 }

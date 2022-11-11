@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "1fb3ebfb-df1d-4e55-a2d1-73a1c2492416",
+		"name": "cron-job-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22935470"
+	},
+	"item": [
+		{
+			"name": "send mail expired borrow",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDc0MTg0LCJleHAiOjE2NjgxMzQ2NjR9.gunovz-9kE8LDsKvcapzX5XVfcGB7COHwL0TxexzaFCSaPx9KHAT5Kd2_6TKwg7kIc48e5Ibp0YtuEJEwlyhWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9088/cron/sendMail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9088",
+					"path": [
+						"cron",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

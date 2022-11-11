@@ -618,7 +618,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/v1.0/library/author/1",
+					"raw": "http://localhost:8080/v1.0/library/author/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -628,7 +628,7 @@
 						"v1.0",
 						"library",
 						"author",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -1772,6 +1772,357 @@
 						"loan",
 						"delete",
 						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find book by bookname elastic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY3OTg0NDQ4LCJleHAiOjE2NjgwNDQ5Mjh9.DtLNjx2Cihd7InC33sPW5jicTFOQZMiWitW-RMPiEPV9ZCcDm6S16qVUJ_qZNUIqjul7sr-SxkdoEQkk7Rljjw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hinh hoc \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/elastic/book/findByName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"elastic",
+						"book",
+						"findByName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find author by author name elastic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY3OTg0NDQ4LCJleHAiOjE2NjgwNDQ5Mjh9.DtLNjx2Cihd7InC33sPW5jicTFOQZMiWitW-RMPiEPV9ZCcDm6S16qVUJ_qZNUIqjul7sr-SxkdoEQkk7Rljjw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Long \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1.0/elastic/author/findByName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"elastic",
+						"author",
+						"findByName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find category by category name elastic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY3OTg0NDQ4LCJleHAiOjE2NjgwNDQ5Mjh9.DtLNjx2Cihd7InC33sPW5jicTFOQZMiWitW-RMPiEPV9ZCcDm6S16qVUJ_qZNUIqjul7sr-SxkdoEQkk7Rljjw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"giao khoa \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/elastic/category/findByName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"elastic",
+						"category",
+						"findByName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find book amount by author name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Tran Hoang Long\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1.0/report/findBookByAuthor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"report",
+						"findBookByAuthor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find book amount by category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sach giao khoa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1.0/report/findBookByCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"report",
+						"findBookByCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find book amount by first letter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstLetter\":\"T\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1.0/report/findBookByLetter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"report",
+						"findBookByLetter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "The most borrowed book in time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\":\"2022-11-01\",\r\n    \"endDate\":\"2022-11-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1.0/report/bookInTime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"report",
+						"bookInTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book get borrowed in time",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDUxNzkyLCJleHAiOjE2NjgxMTIyNzJ9.kNEDMagsV1reWEJBD04PgidWqVQ7AJZj5Nk81BD_kjI_uAGWOFkD9lsG_bAF1PfMOD6jzFIfAQjOO7CoWXZDCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\":\"2022-11-01\",\r\n    \"endDate\":\"2022-11-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8988/report/borrowInTime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8988",
+					"path": [
+						"report",
+						"borrowInTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send mail expired borrow",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY4MDc0MTg0LCJleHAiOjE2NjgxMzQ2NjR9.gunovz-9kE8LDsKvcapzX5XVfcGB7COHwL0TxexzaFCSaPx9KHAT5Kd2_6TKwg7kIc48e5Ibp0YtuEJEwlyhWA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1.0/cron/sendMail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"cron",
+						"sendMail"
 					]
 				}
 			},

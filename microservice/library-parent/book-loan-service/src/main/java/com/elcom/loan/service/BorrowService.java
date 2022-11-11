@@ -29,4 +29,6 @@ public interface BorrowService {
 
    List<Object[]> borrowInTime(Date startDate, Date endDate );
 
+   List<Object[]> expiredBorrow();
+
 }

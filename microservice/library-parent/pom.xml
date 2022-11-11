@@ -17,6 +17,7 @@
         <module>book-loan-service</module>
         <module>elastic-service</module>
         <module>report-service</module>
+        <module>cron-job-service</module>
 
 
     </modules>

@@ -328,5 +328,17 @@ public class BorrowController extends BaseController{
         return response;
     }
 
+    @GetMapping("/loan/expiredBorrow")
+    public ResponseMessage expiredBorrow(){
+        ResponseMessage response  = null;
+        List<Object[]> result = borrowService.expiredBorrow();
+        if(result == null || result.isEmpty()){
+            response = new ResponseMessage(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase(),
+                    new MessageContent(HttpStatus.NOT_FOUND.value(), HttpStatus.NOT_FOUND.getReasonPhrase(), null));
+        }else{
+            response = new ResponseMessage(new MessageContent(HttpStatus.OK.value(), HttpStatus.OK.toString(),result));
+        }
+        return response;
+    }
 
 }

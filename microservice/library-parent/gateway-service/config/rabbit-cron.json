@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/cron/sendMail",
+    "method": "GET",
+    "rabbit": "rpc"
+  }
+]
